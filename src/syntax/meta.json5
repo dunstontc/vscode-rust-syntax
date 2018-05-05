@@ -1,0 +1,13 @@
+{
+  "repository": {
+    "meta": {
+      "patterns": [
+        {
+          "name": "meta.attribute.rust",
+          "begin": "#\\!?\\[",
+          "end": "\\]",
+        },
+      ]
+    }
+  }
+}

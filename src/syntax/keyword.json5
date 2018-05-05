@@ -1,0 +1,58 @@
+{
+  "repository": {
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.rust",
+          "match": "\\b(break|continue|else|if|in|for|loop|match|return|while)\\b"
+        },
+        {
+          "name": "keyword.other.rust",
+          "match": "\\b(crate|extern|ref|use|super|move)\\b"
+        },
+        {
+          "comment": "Reserved keyword",
+          "name": "invalid.deprecated.rust",
+          "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
+        },
+        {
+          "name": "variable.language.self.rust",
+          "match": "\\b(self)\\b"
+        },
+        {
+          "name": "keyword.operator.sigil.rust",
+          "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)"
+        },
+        {
+          "name": "keyword.other.unsafe.rust",
+          "match": "\\b(unsafe)\\b"
+        },
+        {
+          "name": "keyword.other.where.rust",
+          "match": "\\b(where)\\b"
+        },
+        {
+          "name": "keyword.operator.misc.rust",
+          "match": "(=>|::|\\bas\\b)"
+        },
+        {
+          "name": "keyword.operator.assignment.rust",
+          "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)"
+        },
+        {
+          "name": "keyword.operator.arithmetic.rust",
+          "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
+        },
+        {
+          "name": "keyword.operator.comparison.rust",
+          "match": "(&&|\\|\\||==|!=)"
+        },
+        {
+          "comment": "Comparison operator (second group because of regex precedence)",
+          "name": "keyword.operator.comparison.rust",
+          "match": "(<=|>=|<|>)"
+        },
+      ]
+    }
+  }
+}

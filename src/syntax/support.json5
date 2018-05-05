@@ -1,0 +1,28 @@
+{
+  "repository": {
+    "support": {
+      "patterns": [
+        {
+          "comment": "Built-in macro",
+          "name": "support.function.builtin.rust",
+          "match": "\\b(macro_rules|compile_error|format_args|env|option_env|concat_idents|concat|line|column|file|stringify|include|include_str|include_bytes|module_path|cfg)!"
+        },
+        {
+          "comment": "Core macro",
+          "name": "support.function.core.rust",
+          "match": "\\b(panic|assert|assert_eq|assert_ne|debug_assert|debug_assert_eq|debug_assert_ne|try|write|writeln|unreachable|unimplemented)!"
+        },
+        {
+          "comment": "Standard library macro",
+          "name": "support.function.std.rust",
+          "match": "\\b(format|print|println|eprint|eprintln|select|vec)!"
+        },
+        {
+          "comment": "Logging macro",
+          "name": "support.function.log.rust",
+          "match": "\\b(log|error|warn|info|debug|trace|log_enabled)!"
+        },
+      ]
+    }
+  }
+}

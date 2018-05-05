@@ -1,0 +1,54 @@
+{
+    "name": "vscode-rust-syntax",
+    "displayName": "vscode-rust-syntax",
+    "description": "Syntax highlighting for Rust.",
+    "version": "0.0.1",
+    "publisher": "dunstontc",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dunstontc/vscode-rust-syntax.git"
+    },
+    "bugs": {
+      "url": "https://github.com/dunstontc/vscode-rust-syntax/issues"
+    },
+    "scripts": {
+        "start": "gulp watch"
+    },
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "rust",
+                "aliases": [
+                    "rust",
+                    "Rust"
+                ],
+                "extensions": [
+                    ".rs"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "rs",
+                "scopeName": "source.rs",
+                "path": "./syntaxes/rust.tmLanguage.json"
+            }
+        ]
+    },
+    "galleryBanner": {
+        "color": "#569cd6",
+        "theme": "dark"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-json5-to-json": "^0.2.1",
+        "gulp-merge-json": "^1.3.0"
+    }
+}

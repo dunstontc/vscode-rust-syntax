@@ -1,0 +1,40 @@
+{
+  "repository": {
+    "storage": {
+      "patterns": [
+        {
+          "name": "storage.modifier.mutable.rust",
+          "match": "\\b(mut)\\b"
+        },
+        {
+          "name": "storage.modifier.box.rust",
+          "match": "\\b(box)\\b"
+        },
+        {
+          "name": "storage.modifier.const.rust",
+          "match": "\\b(const)\\b"
+        },
+        {
+          "name": "storage.modifier.visibility.rust", // FIXME: rename?
+          "match": "\\b(pub)\\b"
+        },
+        {
+          "name": "storage.modifier.static.rust",
+          "match": "\\b(static)\\b"
+        },
+        {
+          "name": "storage.type.module.rust",
+          "match": "\\b(mod)\\b"
+        },
+        {
+          "name": "storage.type.rust",
+          "match": "\\b(let)\\b"
+        },
+        {
+          "name": "storage.type.rust",
+          "match": "\\b(enum|impl|struct|trait|union)\\b"
+        },
+      ]
+    }
+  }
+}
