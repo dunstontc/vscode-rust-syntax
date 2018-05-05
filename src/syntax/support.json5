@@ -22,6 +22,11 @@
           "name": "support.function.log.rust",
           "match": "\\b(log|error|warn|info|debug|trace|log_enabled)!"
         },
+        {
+          "comment": "Core type variant",
+          "name": "support.constant.core.rust",
+          "match": "\\b(Some|None|Ok|Err)\\b"
+        },
       ]
     }
   }

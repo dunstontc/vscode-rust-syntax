@@ -4,5 +4,8 @@
 
 > [zargony/atom-language-rust](https://github.com/zargony/atom-language-rust) was used as the starting point for this project.
 
+## Resources
+- [The Book](https://doc.rust-lang.org/book/second-edition/appendix-01-keywords.html)
+
 ## [License](https://github.com/dunstontc/vscode-rust-syntax/blob/master/LICENSE)
 

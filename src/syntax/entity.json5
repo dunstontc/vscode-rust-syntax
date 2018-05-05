@@ -33,6 +33,45 @@
             }
           },
         },
+        {
+          "comment": "Function call with type parameters",
+          "begin": "\\b([A-Za-z][A-Za-z0-9_]*|_[A-Za-z0-9_]+)\\s*(::)(?=\\s*<.*>\\s*\\()",
+          "end": "\\(",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.rust"
+            },
+            "2": {
+              "name": "keyword.operator.misc.rust"
+            }
+          },
+        },
+        {
+          "comment": "Type declaration",
+          "begin": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+          "end": "[\\{\\(;]",
+          "beginCaptures": {
+            "1": {
+              "name": "storage.type.rust"
+            },
+            "2": {
+              "name": "entity.name.type.rust"
+            }
+          },
+        },
+        {
+          "comment": "Type alias",
+          "begin": "\\b(type)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+          "end": ";",
+          "beginCaptures": {
+            "1": {
+              "name": "storage.type.rust"
+            },
+            "2": {
+              "name": "entity.name.type.rust"
+            }
+          },
+        }
       ]
     }
   }
