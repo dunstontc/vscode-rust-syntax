@@ -1,0 +1,24 @@
+{
+	// "information_for_contributors": [
+	// 	"This file has been converted from https://github.com/zargony/atom-language-rust/blob/master/grammars/rust.cson",
+	// 	"If you want to provide a fix or improvement, please create a pull request against the original repository.",
+	// 	"Once accepted there, we are happy to receive an update request."
+	// ],
+	// "version": "https://github.com/zargony/atom-language-rust/commit/179f449a69182cae4fcdf644d59d842b7e445f89",
+	"name": "Rust",
+	"scopeName": "source.rust",
+	"patterns": [
+    { "include": "#comment" },
+    { "include": "#constant" },
+    { "include": "#entity" },
+    { "include": "#keyword" },
+    { "include": "#meta" },
+    // { "include": "#punctuation" },
+    { "include": "#storage" },
+    { "include": "#string" },
+    { "include": "#support" },
+    { "include": "#unsorted" },
+    // { "include": "#variable" },
+  ],
+	"repository": {}
+	}

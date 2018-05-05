@@ -7,7 +7,7 @@ gulp.task('default', () => { });
 gulp.task('compile-json', () => {
   gulp.src('./src/syntax/*.json5')
     .pipe(merge({
-      fileName: "viml.tmLanguage.json",
+      fileName: "rust.tmLanguage.json",
       json5: true,
     }))
     .pipe(json5({
