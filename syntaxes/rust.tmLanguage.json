@@ -1,21 +1,20 @@
 {
-    "repository": {
-        "comment": {
-            "patterns": [
-                {
-                    "name": "comment.line.double-slash.rust",
-                    "begin": "//",
-                    "end": "$"
-                }
-            ]
-        }
-    },
-    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "rust",
-    "scopeName": "source.rust",
-    "patterns": [
-        {
-            "include": "#comment"
-        }
-    ]
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "rust",
+  "scopeName": "source.rust",
+  "patterns": [
+    {
+      "include": "#comment"
+    }
+  ],
+  "repository": {
+      "constant": {
+          "patterns": [
+              {
+                  "name": "constant.language.boolean.rust",
+                  "match": "\\b(true|false)\\b"
+              }
+          ]
+      }
+  }
 }

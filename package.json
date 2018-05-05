@@ -15,15 +15,14 @@
       "publish": "vsce publish",
       "start": "gulp watch"
     },
-    "engines": {"vscode": "^1.20.0"},
+    "engines": {"vscode": "*"},
     "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
             {
                 "id": "rust",
                 "aliases": [
-                    "rust",
-                    "Rust"
+                    "rust"
                 ],
                 "extensions": [".rs"],
                 "configuration": "./language-configuration.json"
