@@ -43,7 +43,7 @@
         ]
     },
     "galleryBanner": {
-        "color": "#569cd6",
+        "color": "#1e1e1e",
         "theme": "dark"
     },
     "icon": "assets/rust.png",

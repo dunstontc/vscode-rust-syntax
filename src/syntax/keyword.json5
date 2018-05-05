@@ -10,11 +10,11 @@
           "name": "keyword.other.rust",
           "match": "\\b(crate|extern|ref|use|super|move)\\b"
         },
-        {
-          "comment": "Reserved keyword",
-          "name": "invalid.deprecated.rust",
-          "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
-        },
+        // {
+        //   "comment": "Reserved keyword",
+        //   "name": "invalid.deprecated.rust",
+        //   "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
+        // },
         {
           "name": "variable.language.self.rust",
           "match": "\\b(self)\\b"
@@ -43,15 +43,15 @@
           "name": "keyword.operator.arithmetic.rust",
           "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
         },
-        {
-          "name": "keyword.operator.comparison.rust",
-          "match": "(&&|\\|\\||==|!=)"
-        },
-        {
-          "comment": "Comparison operator (second group because of regex precedence)",
-          "name": "keyword.operator.comparison.rust",
-          "match": "(<=|>=|<|>)"
-        },
+        // {
+        //   "name": "keyword.operator.comparison.rust",
+        //   "match": "(&&|\\|\\||==|!=)"
+        // },
+        // {
+        //   "comment": "Comparison operator (second group because of regex precedence)",
+        //   "name": "keyword.operator.comparison.rust",
+        //   "match": "(<=|>=|<|>)"
+        // },
       ]
     }
   }

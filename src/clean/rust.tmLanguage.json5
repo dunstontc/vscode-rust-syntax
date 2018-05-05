@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  // "version": "https://github.com/dunstontc/vscode-rust-syntax/commit/6c5d99862a2ed42fca27d4d3dc2b34b41fbe64f2",
+	"name": "rust",
+	"scopeName": "source.rust",
+	"patterns": [
+    { "include": "#comment" },
+    // { "include": "#constant" },
+    // { "include": "#entity" },
+    // { "include": "#keyword" },
+    // { "include": "#meta" },
+    // { "include": "#punctuation" },
+    // { "include": "#storage" },
+    // { "include": "#string" },
+    // { "include": "#support" },
+    // { "include": "#unsorted" },
+    // { "include": "#variable" },
+  ],
+	"repository": {}
+	}

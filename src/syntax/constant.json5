@@ -1,51 +1,47 @@
 {
-  "repository": {
-    "constant": {
-      "patterns": [
-        {
-          "name": "constant.character.escape.rust",
-          "match": "\\\\(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)"
-        },
-        {
-          "comment": "Floating point literal (fraction)",
-          "name": "constant.numeric.float.rust",
-          "match": "\\b[0-9][0-9_]*\\.[0-9][0-9_]*([eE][+-]?[0-9_]+)?(f32|f64)?\\b"
-        },
-        {
-          "comment": "Floating point literal (exponent)",
-          "name": "constant.numeric.float.rust",
-          "match": "\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?[eE][+-]?[0-9_]+(f32|f64)?\\b"
-        },
-        {
-          "comment": "Floating point literal (typed)",
-          "name": "constant.numeric.float.rust",
-          "match": "\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?([eE][+-]?[0-9_]+)?(f32|f64)\\b"
-        },
-        {
-          "comment": "Integer literal (decimal)",
-          "name": "constant.numeric.integer.decimal.rust",
-          "match": "\\b[0-9][0-9_]*([ui](8|16|32|64|128|s|size))?\\b"
-        },
-        {
-          "comment": "Integer literal (hexadecimal)",
-          "name": "constant.numeric.integer.hexadecimal.rust",
-          "match": "\\b0x[a-fA-F0-9_]+([ui](8|16|32|64|128|s|size))?\\b"
-        },
-        {
-          "comment": "Integer literal (octal)",
-          "name": "constant.numeric.integer.octal.rust",
-          "match": "\\b0o[0-7_]+([ui](8|16|32|64|128|s|size))?\\b"
-        },
-        {
-          "comment": "Integer literal (binary)",
-          "name": "constant.numeric.integer.binary.rust",
-          "match": "\\b0b[01_]+([ui](8|16|32|64|128|s|size))?\\b"
-        },
-        {
-          "name": "constant.language.boolean.rust",
-          "match": "\\b(true|false)\\b"
-        },
-      ]
-    }
-  }
+  // "repository": {
+  //   "constant": {
+  //     "patterns": [
+  //       {
+  //         "comment": "Floating point literal (fraction)",
+  //         "name": "constant.numeric.float.rust",
+  //         "match": "\\b[0-9][0-9_]*\\.[0-9][0-9_]*([eE][+-]?[0-9_]+)?(f32|f64)?\\b"
+  //       },
+  //       {
+  //         "comment": "Floating point literal (exponent)",
+  //         "name": "constant.numeric.float.rust",
+  //         "match": "\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?[eE][+-]?[0-9_]+(f32|f64)?\\b"
+  //       },
+  //       {
+  //         "comment": "Floating point literal (typed)",
+  //         "name": "constant.numeric.float.rust",
+  //         "match": "\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?([eE][+-]?[0-9_]+)?(f32|f64)\\b"
+  //       },
+  //       {
+  //         "comment": "Integer literal (decimal)",
+  //         "name": "constant.numeric.integer.decimal.rust",
+  //         "match": "\\b[0-9][0-9_]*([ui](8|16|32|64|128|s|size))?\\b"
+  //       },
+  //       {
+  //         "comment": "Integer literal (hexadecimal)",
+  //         "name": "constant.numeric.integer.hexadecimal.rust",
+  //         "match": "\\b0x[a-fA-F0-9_]+([ui](8|16|32|64|128|s|size))?\\b"
+  //       },
+  //       {
+  //         "comment": "Integer literal (octal)",
+  //         "name": "constant.numeric.integer.octal.rust",
+  //         "match": "\\b0o[0-7_]+([ui](8|16|32|64|128|s|size))?\\b"
+  //       },
+  //       {
+  //         "comment": "Integer literal (binary)",
+  //         "name": "constant.numeric.integer.binary.rust",
+  //         "match": "\\b0b[01_]+([ui](8|16|32|64|128|s|size))?\\b"
+  //       },
+  //       {
+  //         "name": "constant.language.boolean.rust",
+  //         "match": "\\b(true|false)\\b"
+  //       },
+  //     ]
+  //   }
+  // }
 }
