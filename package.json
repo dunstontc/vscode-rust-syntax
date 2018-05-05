@@ -1,8 +1,8 @@
 {
     "name": "vscode-rust-syntax",
     "displayName": "vscode-rust-syntax",
-    "description": "Syntax highlighting for Rust. (WIP)",
-    "version": "0.0.1",
+    "description": "(UNSTABLE, do not use!)",
+    "version": "0.0.2",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
@@ -12,14 +12,11 @@
         "url": "https://github.com/dunstontc/vscode-rust-syntax/issues"
     },
     "scripts": {
-        "start": "gulp watch"
+      "publish": "vsce publish",
+      "start": "gulp watch"
     },
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
+    "engines": {"vscode": "^1.20.0"},
+    "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
             {
@@ -28,9 +25,7 @@
                     "rust",
                     "Rust"
                 ],
-                "extensions": [
-                    ".rs"
-                ],
+                "extensions": [".rs"],
                 "configuration": "./language-configuration.json"
             }
         ],
