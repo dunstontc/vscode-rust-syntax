@@ -5,7 +5,7 @@ const json5 = require('gulp-json5-to-json');
 gulp.task('default', () => { });
 
 gulp.task('compile-json', () => {
-  gulp.src('./src/clean/*.json5')
+  gulp.src('./src/**/*.json5')
     .pipe(merge({
       fileName: "rust.tmLanguage.json",
       json5: true,

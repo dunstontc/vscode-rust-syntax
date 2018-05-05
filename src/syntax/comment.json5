@@ -2,21 +2,21 @@
   "repository": {
     "comment": {
       "patterns": [
-        // {
-        //   "name": "comment.block.documentation.rust",
-        //   "begin": "/\\*[\\*!](?![\\*/])",
-        //   "end": "\\*/",
-        // },
-        // {
-        //   "name": "comment.block.rust",
-        //   "begin": "/\\*",
-        //   "end": "\\*/",
-        // },
-        // {
-        //   "name": "comment.line.documentation.rust",
-        //   "begin": "//[!/](?=[^/])",
-        //   "end": "$"
-        // },
+        {
+          "name": "comment.block.documentation.rust",
+          "begin": "/\\*[\\*!](?![\\*/])",
+          "end": "\\*/",
+        },
+        {
+          "name": "comment.block.rust",
+          "begin": "/\\*",
+          "end": "\\*/",
+        },
+        {
+          "name": "comment.line.documentation.rust",
+          "begin": "//[!/](?=[^/])",
+          "end": "$"
+        },
         {
           "name": "comment.line.double-slash.rust",
           "begin": "//",

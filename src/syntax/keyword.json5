@@ -33,7 +33,11 @@
         },
         {
           "name": "keyword.operator.misc.rust",
-          "match": "(=>|::|\\bas\\b)"
+          "match": "(=>|\\bas\\b)"
+        },
+        {
+          "name": "keyword.operator.path.rust",
+          "match": "(::)"
         },
         {
           "name": "keyword.operator.assignment.rust",
