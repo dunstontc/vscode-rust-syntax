@@ -1,0 +1,8 @@
+2018-05-05 Modularize Rust tmLang.
+2018-05-02 Add +Rust support for ";".
+2018-05-02 Add +Rust support for "->".
+2018-05-02 Add +Rust support for "<T>".
+2018-05-02 Add +Rust support for "_".
+2018-05-02 Add +Rust support for "{}".
+2018-05-02 Add +Rust support for "{:?}".
+2018-05-02 Add +Rust support for colons in type assignment.

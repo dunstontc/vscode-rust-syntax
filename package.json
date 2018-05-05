@@ -36,7 +36,7 @@
         ],
         "grammars": [
             {
-                "language": "rs",
+                "language": "rust",
                 "scopeName": "source.rs",
                 "path": "./syntaxes/rust.tmLanguage.json"
             }

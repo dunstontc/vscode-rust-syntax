@@ -42,7 +42,7 @@
               "name": "entity.name.function.rust"
             },
             "2": {
-              "name": "keyword.operator.misc.rust"
+              "name": "keyword.operator.path.rust"
             }
           },
         },
