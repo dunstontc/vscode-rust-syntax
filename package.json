@@ -1,7 +1,7 @@
 {
     "name": "vscode-rust-syntax",
     "displayName": "vscode-rust-syntax",
-    "description": "Syntax highlighting for Rust.",
+    "description": "Syntax highlighting for Rust. (WIP)",
     "version": "0.0.1",
     "publisher": "dunstontc",
     "repository": {
@@ -46,6 +46,7 @@
         "color": "#569cd6",
         "theme": "dark"
     },
+    "icon": "assets/rust.png",
     "devDependencies": {
         "gulp": "^3.9.1",
         "gulp-json5-to-json": "^0.2.1",
