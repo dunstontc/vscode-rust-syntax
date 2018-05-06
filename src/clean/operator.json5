@@ -1,0 +1,44 @@
+{
+  "repository": {
+    "operator": {
+      "patterns": [
+        {
+          "name": "keyword.operator.path.rust",
+          "match": "(::)"
+        },
+        {
+          "name": "keyword.operator.return-type.rust",
+          "match": "(->)"
+        },
+        {
+          "name": "keyword.operator.match.rust",
+          "match": "(=>)"
+        },
+        {
+          "name": "keyword.operator.ignored.rust",
+          "match": "\\b(_)\\b"
+        },
+        {
+          "name": "keyword.operator.member-access.rust",
+          "match": "\\b(\\.)\\b"
+        },
+        {
+          "name": "keyword.operator.range.rust",
+          "match": "(\\.\\.)"
+        },
+        {
+          "name": "keyword.operator.sigil.rust",
+          "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)"
+        },
+        {
+          "name": "keyword.operator.assignment.rust",
+          "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)"
+        },
+        {
+          "name": "keyword.operator.arithmetic.rust",
+          "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
+        },
+      ]
+    }
+  }
+}

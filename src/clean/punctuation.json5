@@ -1,0 +1,16 @@
+{
+  "repository": {
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.terminator.rust",
+          "match": ";$"
+        },
+        {
+          "name": "punctuation.other.comma.rust",
+          "match": ","
+        },
+      ]
+    }
+  }
+}

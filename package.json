@@ -1,8 +1,8 @@
 {
     "name": "vscode-rust-syntax",
     "displayName": "vscode-rust-syntax",
-    "description": "Syntax highlighting for Rust.",
-    "version": "0.0.4",
+    "description": "Syntax highlighting for Rust. (WIP)",
+    "version": "0.0.5",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",

@@ -27,6 +27,10 @@
           "match": "\\b(mod)\\b"
         },
         {
+          "name": "storage.type.function.rust",
+          "match": "\\b(fn)\\b"
+        },
+        {
           "name": "storage.type.rust",
           "match": "\\b(let)\\b"
         },
