@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.8
+- Updated icon.
+- Improved highlighting for type params.
+
 ## 0.0.7
 - Fixed issue where `.` wasn't highlighted when preceded by a paren.
 - Added items to todo.txt.
@@ -18,7 +22,7 @@
 
 ## 0.0.5
 - Fixed an issue with comments.
-- defined `,` as `punctuation.comma`.
+- Defined `,` as `punctuation.comma`.
 - Defined `;` as `punctuation.terminaor`.
 - Defined `::`  as *path* operator.
 - Defined `=>` as *match* operator.

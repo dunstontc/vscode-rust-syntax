@@ -11,11 +11,6 @@
           "match": "\\b(unsafe)\\b"
         },
         {
-          "comment": "Reserved keyword",
-          "name": "invalid.deprecated.rust",
-          "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
-        },
-        {
           "name": "keyword.control.rust",
           "match": "\\b(break|continue|else|if|in|for|loop|match|return|while)\\b"
         },
@@ -28,8 +23,13 @@
           "match": "\\b(where)\\b"
         },
         {
-          "name": "keyword.operator.as.rust",
+          "name": "keyword.other.as.rust",
           "match": "(\\b(as)\\b)"
+        },
+        {
+          "comment": "Reserved keyword",
+          "name": "invalid.deprecated.rust",
+          "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
         },
       ]
     }

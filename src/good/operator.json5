@@ -76,6 +76,31 @@
           "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
           "match": "\\B(<=|>=)\\B",
         },
+        // =============================================
+        // {
+        //   // "name": "string.quoted.double.rust",
+        //   "begin": "^(use)\\s((\\w+)(::))+({)",
+        //   "beginCaptures": {
+        //     "1": {"name": "keyword.other.rust"},
+        //     "2": {"name": "entity.name.type.module.rust"},
+        //     "3": {"name": "entity.name.lifetime.rust"},
+        //   },
+        //   "end": "\"",
+        //   "patterns": [
+        //     {
+        //       "name": "constant.character.escape.rust",
+        //       "match": "\\\\(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)"
+        //     },
+        //     {
+        //       "name": "constant.other.placeholder.rust",
+        //       "match": "{}"
+        //     },
+        //     {
+        //       "name": "constant.other.placeholder.rust",
+        //       "match": "{:\\?}"
+        //     },
+        //   ]
+        // },
       ]
     }
   }

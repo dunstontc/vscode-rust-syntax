@@ -14,10 +14,10 @@
           "name": "punctuation.other.comma.rust",
           "match": ","
         },
-        {
-          "name": "punctuation.other.curly.rust",
-          "match": "[{}]"
-        },
+        // {
+        //   "name": "punctuation.other.curly.rust",
+        //   "match": "[{}]"
+        // },
         {
           "name": "punctuation.other.paren.rust",
           "match": "[)(]"

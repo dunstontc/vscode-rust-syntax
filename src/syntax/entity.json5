@@ -77,11 +77,11 @@
         //     },
         //   },
         // },
+        // {
         {
           "comment": "Type declaration",
-          "begin": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
-          "end": "[\\{\\(;]",
-          "beginCaptures": {
+          "match": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]+)",
+          "captures": {
             "1": {
               "name": "storage.type.rust"
             },
