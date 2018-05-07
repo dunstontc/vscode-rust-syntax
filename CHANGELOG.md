@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.7
+- Fixed issue where `.` wasn't highlighted when preceded by a paren.
+- Added items to todo.txt.
+
 ## 0.0.6
 - Added highlighting for module names.
 - Defined `:`  as type separator.
@@ -8,7 +12,9 @@
 - Defined `_`  as *ignored* keyword.
 - Defined `{` & `}` as *curly*.
 - Defined `(` & `)` as *paren*.
-- DEPRECATED: `constant.other.placeholder.rust`.
+- DEPRECATED: 
+  - `string.quoted.single.rust`
+  - `constant.other.placeholder.rust`
 
 ## 0.0.5
 - Fixed an issue with comments.

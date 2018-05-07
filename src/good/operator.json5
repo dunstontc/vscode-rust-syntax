@@ -4,73 +4,77 @@
       "patterns": [
         {
           "name": "keyword.operator.member-access.rust",
-          "match": "(\\.)(?=parse)"
+          "match": "(\\.)(?=parse)",
         },
         {
           "name": "keyword.operator.member-access.rust",
-          "match": "\\s(\\.)\\b"
+          "match": "\\s(\\.)\\b",
         },
         {
           "name": "keyword.operator.member-access.rust",
-          "match": "\\b(\\.)\\b"
+          "match": "\\b(\\.)\\b",
         },
         {
           "name": "keyword.operator.member-access.rust",
-          "match": "(\\.)(?=to_string)"
+          "match": "\\B(\\.)\\b",
+        },
+        {
+          "name": "keyword.operator.member-access.rust",
+          "match": "(\\.)(?=to_string)",
         },
         {
           "name": "keyword.operator.range.rust",
-          "match": "(\\.\\.)"
+          "match": "(\\.\\.)",
         },
         // =============================================
         {
           "name": "keyword.operator.path.rust",
-          "match": "(::)"
+          "match": "(::)",
         },
         {
           "name": "keyword.operator.return-type.rust",
-          "match": "(->)"
+          "match": "(->)",
         },
         {
           "name": "keyword.operator.match.rust",
-          "match": "(=>)"
+          "match": "(=>)",
         },
         {
           "name": "variable.language.ignored.rust",
-          "match": "\\b(_)\\b"
+          "match": "\\b(_)\\b",
         },
         // =============================================
         {
           "name": "keyword.operator.sigil.rust",
-          "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)"
+          "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)",
         },
         {
           "name": "keyword.operator.assignment.rust",
-          "match": "(\\=)"
+          "match": "(\\=)",
         },
         {
           "name": "keyword.operator.assignment.rust",
-          "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)"
+          "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)",
         },
         {
           "name": "keyword.operator.arithmetic.rust",
-          "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
+          "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)",
         },
         {
           "name": "keyword.operator.comparison.rust",
-          "match": "(&&|\\|\\||==|!=)"
+          "match": "(&&|\\|\\||==|!=)",
         },
         // {
         //   "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
-        //   "match": "\\B(<=|>=|<|>)\\B"
+        //   "match": "\\B(<=|>=|<|>)\\B",
         // },
         {
           "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
-          "match": "\\s(<|>)"
+          "match": "\\s(<|>)",
         },
         {
           "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
-          "match": "\\B(<=|>=)\\B"
+          "match": "\\B(<=|>=)\\B",
         },
       ]
     }

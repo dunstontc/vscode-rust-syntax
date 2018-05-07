@@ -9,3 +9,6 @@ x 2018-05-06 2018-05-06 Add +Rust support for "..".
 x 2018-05-06 2018-05-06 Fix highlighting for "Some()" (with parens).
 2018-05-02 Add full support for "<T>".
 2018-05-02 Add full support for ":" (punctuation.separator.type.rust)
+2018-05-06 Fix issue with "self::path::path"
+2018-05-06 Fix "." accessor after parens.
+2018-05-06 Highlight variables in map functions.
