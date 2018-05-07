@@ -2,9 +2,10 @@ x 2018-05-06 2018-05-02 Add +Rust support for ";".
 x 2018-05-06 2018-05-05 Modularize Rust tmLang.
 x 2018-05-06 2018-05-02 Add +Rust support for "{}".
 x 2018-05-06 2018-05-02 Add +Rust support for "{:?}".
-2018-05-05 Fix "entity.name.function", it currently includes opening paren.
-2018-05-06 Add +Rust support for "..".
-2018-05-02 Add +Rust support for "->".
-2018-05-02 Add +Rust support for "<T>".
-2018-05-02 Add +Rust support for "_".
-2018-05-02 Add +Rust support for colons in type assignment.
+x 2018-05-06 2018-05-02 Add +Rust support for "_".
+x 2018-05-06 2018-05-05 Fix "entity.name.function", it currently includes opening paren.
+x 2018-05-06 2018-05-02 Add +Rust support for "->".
+x 2018-05-06 2018-05-06 Add +Rust support for "..".
+x 2018-05-06 2018-05-06 Fix highlighting for "Some()" (with parens).
+2018-05-02 Add full support for "<T>".
+2018-05-02 Add full support for ":" (punctuation.separator.type.rust)

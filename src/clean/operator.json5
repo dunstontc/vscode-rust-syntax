@@ -3,6 +3,27 @@
     "operator": {
       "patterns": [
         {
+          "name": "keyword.operator.member-access.rust",
+          "match": "(\\.)(?=parse)"
+        },
+        {
+          "name": "keyword.operator.member-access.rust",
+          "match": "\\s(\\.)\\b"
+        },
+        {
+          "name": "keyword.operator.member-access.rust",
+          "match": "\\b(\\.)\\b"
+        },
+        {
+          "name": "keyword.operator.member-access.rust",
+          "match": "(\\.)(?=to_string)"
+        },
+        {
+          "name": "keyword.operator.range.rust",
+          "match": "(\\.\\.)"
+        },
+        // =============================================
+        {
           "name": "keyword.operator.path.rust",
           "match": "(::)"
         },
@@ -15,20 +36,17 @@
           "match": "(=>)"
         },
         {
-          "name": "keyword.operator.ignored.rust",
+          "name": "variable.language.ignored.rust",
           "match": "\\b(_)\\b"
         },
-        {
-          "name": "keyword.operator.member-access.rust",
-          "match": "\\b(\\.)\\b"
-        },
-        {
-          "name": "keyword.operator.range.rust",
-          "match": "(\\.\\.)"
-        },
+        // =============================================
         {
           "name": "keyword.operator.sigil.rust",
           "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)"
+        },
+        {
+          "name": "keyword.operator.assignment.rust",
+          "match": "(\\=)"
         },
         {
           "name": "keyword.operator.assignment.rust",
@@ -37,6 +55,22 @@
         {
           "name": "keyword.operator.arithmetic.rust",
           "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
+        },
+        {
+          "name": "keyword.operator.comparison.rust",
+          "match": "(&&|\\|\\||==|!=)"
+        },
+        // {
+        //   "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
+        //   "match": "\\B(<=|>=|<|>)\\B"
+        // },
+        {
+          "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
+          "match": "\\s(<|>)"
+        },
+        {
+          "name": "keyword.operator.comparison.rust",  // Second group because of regex precedence
+          "match": "\\B(<=|>=)\\B"
         },
       ]
     }

@@ -10,11 +10,11 @@
           "name": "keyword.other.unsafe.rust",
           "match": "\\b(unsafe)\\b"
         },
-        // {
-        //   "comment": "Reserved keyword",
-        //   "name": "invalid.deprecated.rust",
-        //   "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
-        // },
+        {
+          "comment": "Reserved keyword",
+          "name": "invalid.deprecated.rust",
+          "match": "\\b(abstract|alignof|become|do|final|macro|offsetof|override|priv|proc|pure|sizeof|typeof|virtual|yield)\\b"
+        },
         {
           "name": "keyword.control.rust",
           "match": "\\b(break|continue|else|if|in|for|loop|match|return|while)\\b"
@@ -30,15 +30,6 @@
         {
           "name": "keyword.operator.as.rust",
           "match": "(\\b(as)\\b)"
-        },
-        {
-          "name": "keyword.operator.comparison.rust",
-          "match": "(&&|\\|\\||==|!=)"
-        },
-        {
-          "comment": "Comparison operator (second group because of regex precedence)",
-          "name": "keyword.operator.comparison.rust",
-          "match": "(<=|>=|<|>)"
         },
       ]
     }

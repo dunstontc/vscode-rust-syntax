@@ -2,18 +2,46 @@
   "repository": {
     "entity": {
       "patterns": [
+        // {
+        //   "match": "([a-zA-Z_]+)(?=[(])",
+        //   "name": "entity.name.function.rust",
+        // },
+        // {
+        //   "match": "([a-z_]+)(?=[(])",
+        //   "name": "entity.name.function.rust",
+        // },
         {
-          "match": "([a-zA-Z_]+)(?=[(])",
+          "match": "([a-zA-RT-Z][a-zA-Z_]+)(?=[(])",
           "name": "entity.name.function.rust",
+        },
+        // =================================================
+        {
+          "match": "([a-zA-Z_]+)(?=::)",
+          "name": "entity.name.type.module.rust",
+        },
+        {
+          "match": "(Some)(?=[(])",
+          "name": "support.constant.core.rust",
         },
         {
           "match": "(impl)\\s(\\S+)",
           "captures": {
             "1": {
-              "name": "keyword.other.impl.rust"
+              "name": "keyword.other.implementation.rust"
             },
             "2": {
               "name": "entity.name.type.rust"
+            }
+          },
+        },
+        {
+          "match": "(mod)\\s([a-zA-Z]+)",
+          "captures": {
+            "1": {
+              "name": "storage.type.module.rust"
+            },
+            "2": {
+              "name": "entity.name.type.module.rust"
             }
           },
         },

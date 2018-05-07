@@ -13,8 +13,11 @@
     { "include": "#storage" },
     { "include": "#string" },
     { "include": "#support" },
+    { "include": "#type" },
     { "include": "#unsorted" },
     { "include": "#variable" },
   ],
-	"repository": {}
+	"repository": {
+    "entity": {"patterns": []},
+  }
 	}

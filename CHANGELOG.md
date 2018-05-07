@@ -1,11 +1,22 @@
 # Change Log
 
+## 0.0.6
+- Added highlighting for module names.
+- Defined `:`  as type separator.
+- Defined `.`  as *member-access* operator.
+- Defined `..`  as *range* operator.
+- Defined `_`  as *ignored* keyword.
+- Defined `{` & `}` as *curly*.
+- Defined `(` & `)` as *paren*.
+- DEPRECATED: `constant.other.placeholder.rust`.
+
 ## 0.0.5
 - Fixed an issue with comments.
 - defined `,` as `punctuation.comma`.
 - Defined `;` as `punctuation.terminaor`.
-- Defined `=>` as *match operator*.
-- Defined `->` as *return-type operator*.
+- Defined `::`  as *path* operator.
+- Defined `=>` as *match* operator.
+- Defined `->` as *return-type* operator.
 
 ## 0.0.4
 - Initial functionality.

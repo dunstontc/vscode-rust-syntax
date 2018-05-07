@@ -2,6 +2,11 @@
   "repository": {
     "support": {
       "patterns": [
+        // {
+        //   "comment": "",
+        //   "name": "support.function.builtin.rust",
+        //   "match": "\\b(macro_rules|compile_error|format_args|env|option_env|concat_idents|concat|line|column|file|stringify|include|include_str|include_bytes|module_path|cfg)!"
+        // },
         {
           "comment": "Built-in macro",
           "name": "support.function.builtin.rust",
@@ -26,6 +31,11 @@
           "comment": "Core type variant",
           "name": "support.constant.core.rust",
           "match": "\\b(Some|None|Ok|Err)\\b"
+        },
+        {
+          "comment": "Core type variant",
+          "name": "support.constant.core.rust",
+          "match": "\\b(Some)"
         },
       ]
     }

@@ -2,7 +2,7 @@
     "name": "vscode-rust-syntax",
     "displayName": "vscode-rust-syntax",
     "description": "Syntax highlighting for Rust. (WIP)",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
@@ -20,9 +20,7 @@
         "languages": [
             {
                 "id": "rust",
-                "aliases": [
-                    "rust"
-                ],
+                "aliases": ["rust"],
                 "extensions": [".rs"],
                 "configuration": "./language-configuration.json"
             }

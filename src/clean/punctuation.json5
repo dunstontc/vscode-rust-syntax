@@ -3,12 +3,24 @@
     "punctuation": {
       "patterns": [
         {
+          "name": "punctuation.separator.type.rust",
+          "match": ":\\s+?(?=(&|bool|char|usize|isize|u8|u16|u32|u64|u128|i8|i16|i32|i64|i128|f32|f64|str|Self|Option|Result|Box|String|Vec|Path|PathBuf))"
+        },
+        {
           "name": "punctuation.terminator.rust",
-          "match": ";$"
+          "match": ";"
         },
         {
           "name": "punctuation.other.comma.rust",
           "match": ","
+        },
+        {
+          "name": "punctuation.other.curly.rust",
+          "match": "[{}]"
+        },
+        {
+          "name": "punctuation.other.paren.rust",
+          "match": "[)(]"
         },
       ]
     }
