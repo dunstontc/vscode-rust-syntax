@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.9
+- Added version badge to readme.
+- Improved highlighting for fmt strings (`"{}"`).
+- Further improved highlighting for type params.
+
 ## 0.0.8
 - Updated icon.
 - Improved highlighting for type params.

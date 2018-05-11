@@ -12,3 +12,6 @@ x 2018-05-06 2018-05-06 Fix highlighting for "Some()" (with parens).
 2018-05-06 Fix issue with "self::path::path"
 2018-05-06 Fix "." accessor after parens.
 2018-05-06 Highlight variables in map functions.
+2018-05-10 Ensure correct highlighting for lifetimes.
+2018-05-10 Add support for `struct update syntax` ("\s+(\.\.)\w+")
+

@@ -2,18 +2,14 @@
     "name": "vscode-rust-syntax",
     "displayName": "vscode-rust-syntax",
     "description": "Syntax highlighting for Rust.",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
         "url": "https://github.com/dunstontc/vscode-rust-syntax.git"
     },
-    "bugs": {
-        "url": "https://github.com/dunstontc/vscode-rust-syntax/issues"
-    },
-    "scripts": {
-      "start": "gulp watch"
-    },
+    "bugs": {"url": "https://github.com/dunstontc/vscode-rust-syntax/issues"},
+    "scripts": {"start": "gulp watch"},
     "engines": {"vscode": "^1.20.0"},
     "categories": ["Programming Languages"],
     "contributes": {

@@ -149,7 +149,7 @@
                     "name": "support.constant.core.rust"
                 },
                 {
-                    "match": "(impl)\\s(\\S+)",
+                    "match": "(impl)\\s([A-Za-z][_A-Za-z0-9]++)",
                     "captures": {
                         "1": {
                             "name": "keyword.other.implementation.rust"
@@ -218,11 +218,9 @@
                         },
                         {
                             "name": "constant.other.placeholder.rust",
-                            "match": "{}"
-                        },
-                        {
-                            "name": "constant.other.placeholder.rust",
-                            "match": "{:\\?}"
+                            "begin": "{",
+                            "end": "}",
+                            "patterns": []
                         }
                     ]
                 },
@@ -235,6 +233,10 @@
         },
         "type": {
             "patterns": [
+                {
+                    "name": "entity.name.type.rust",
+                    "match": "\\b([A-Za-z][_A-Za-z0-9]+)\\b(?=<[_a-zA-Z']+>)"
+                },
                 {
                     "name": "storage.type.core.rust",
                     "match": "\\b(bool|char|usize|isize|u8|u16|u32|u64|u128|i8|i16|i32|i64|i128|f32|f64|str|Self|Option|Result)\\b"
@@ -427,7 +429,7 @@
                 },
                 {
                     "name": "storage.modifier.lifetime.rust",
-                    "match": "'([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+                    "match": "'([a-zA-Z_][a-zA-Z0-9_]*)\\b(!')",
                     "captures": {
                         "1": {
                             "name": "entity.name.lifetime.rust"
@@ -435,7 +437,7 @@
                     }
                 },
                 {
-                    "match": "&('([a-zA-Z_][a-zA-Z0-9_]*))\\b",
+                    "match": "&('([a-zA-Z_][a-zA-Z0-9_]*))\\b(!')",
                     "captures": {
                         "1": {
                             "name": "storage.modifier.lifetime.rust"

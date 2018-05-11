@@ -21,12 +21,24 @@
             },
             {
               "name": "constant.other.placeholder.rust",
-              "match": "{}"
+              "begin": "{",
+              "end": "}",
+              "patterns": [
+
+              ],
             },
-            {
-              "name": "constant.other.placeholder.rust",
-              "match": "{:\\?}"
-            },
+            // {
+            //   "name": "constant.other.placeholder.rust",
+            //   "match": "{}"
+            // },
+            // {
+            //   "name": "constant.other.placeholder.rust",
+            //   "match": "{:\\?}"
+            // },
+            // {
+            //   "name": "constant.other.placeholder.rust",
+            //   "match": "{(.+)?:(.+)?}"
+            // },
           ]
         },
         {
