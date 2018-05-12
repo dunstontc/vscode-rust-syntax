@@ -11,6 +11,23 @@
         //     "3": {"name": "keyword.operator.rust"},
         //   },
         // },
+        {
+          // "name": "variable.other.map.rust",
+          "match": "([|])(\\w+)([|])",
+          "captures": {
+            "1": {"name": "keyword.operator.rust"},
+            "2": {"name": "variable.other.map.rust"},
+            "3": {"name": "keyword.operator.rust"},
+          },
+        },
+        // {
+        //   "match": "(&)(\\w+)",
+        //   "captures": {
+        //     "1": {"name": "keyword.operator.sigil.rust"},
+        //     "2": {"name": "variable.other.ref.rust"},
+        //   },
+        // },
+
       ]
     }
   }

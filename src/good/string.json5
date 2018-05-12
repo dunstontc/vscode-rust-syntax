@@ -27,18 +27,6 @@
 
               ],
             },
-            // {
-            //   "name": "constant.other.placeholder.rust",
-            //   "match": "{}"
-            // },
-            // {
-            //   "name": "constant.other.placeholder.rust",
-            //   "match": "{:\\?}"
-            // },
-            // {
-            //   "name": "constant.other.placeholder.rust",
-            //   "match": "{(.+)?:(.+)?}"
-            // },
           ]
         },
         {

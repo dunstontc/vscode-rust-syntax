@@ -14,9 +14,13 @@
           "name": "keyword.control.rust",
           "match": "\\b(break|continue|else|if|in|for|loop|match|return|while)\\b"
         },
+        // {
+        //   "name": "keyword.other.rust",
+        //   "match": "\\b(crate|extern|ref|use|super|move)\\b"
+        // },
         {
           "name": "keyword.other.rust",
-          "match": "\\b(crate|extern|ref|use|super|move)\\b"
+          "match": "\\b(ref|use|super|move)\\b"
         },
         {
           "name": "keyword.other.where.rust",

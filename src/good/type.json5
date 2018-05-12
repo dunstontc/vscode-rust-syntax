@@ -6,9 +6,62 @@
         //   "name": "entity.name.type.rust",
         //   "match": "\\b([A-Za-z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b"
         // },
+        // {
+        //   "match": "[_a-zA-Z]+::([_a-zA-Z]+)(?=[^(])*",
+        //   "captures": {
+        //     "1": {"name": "entity.name.type.rust"},
+        //     "2": {"name": "keyword.operator.path.rust"},
+        //     "3": {"name": "entity.name.type.rust"},
+        //   },
+        // },
+        // {
+        //   "match": "([_a-zA-Z]+)(::)([_a-zA-Z]+)\\b!\\(",
+        //   "captures": {
+        //     "1": {"name": "entity.name.type.rust"},
+        //     "2": {"name": "keyword.operator.path.rust"},
+        //     "3": {"name": "entity.name.type.rust"},
+        //   },
+        // },
         {
+          // "name": "entity.name.type.rust",
+          "begin": "(\\:\\:){",
+          "beginCaptures": {
+            "1": {"name": "keyword.operator.path.rust"},
+          },
+          "end": "}(;)",
+          "endCaptures": {
+            "1": {"name": "punctuation.terminator.rust"},
+          },
+          "patterns": [
+            {
+              "name": "punctuation.other.comma.rust",
+              "match": ","
+            },
+            {
+              "name": "entity.name.type.rust",
+              "match": "\\w+"
+            },
+          ],
+        },
+        {
+          // "name": "entity.name.type.crate.rust",
+          "match": "^(extern) (crate) ([_A-Za-z0-9]+)",
+          "captures": {
+            "1": {"name": "keyword.other.rust"},
+            "2": {"name": "keyword.other.rust"},
+            "3": {"name": "entity.name.type.rust"},
+          },
+        },
+        {
+          "match": "\\b([A-Za-z][_A-Za-z0-9]+)\\b(?=<[_a-zA-Z']+>)",
           "name": "entity.name.type.rust",
-          "match": "\\b([A-Za-z][_A-Za-z0-9]+)\\b(?=<[_a-zA-Z']+>)"
+        },
+        {
+          "match": "([a-zA-Z_]+)(?=::)",
+          "name": "entity.name.type.mod.rust",
+          "captures": {
+            "2": {"name": "keyword.operator.path.rust"},
+          },
         },
         {
           "name": "storage.type.core.rust",
@@ -24,10 +77,6 @@
           "name": "support.type.core.rust",
           "match": "\\b(Drop|Fn|FnMut|FnOnce|Clone|PartialEq|PartialOrd|Eq|Ord|AsRef|AsMut|Into|From|Default|Iterator|Extend|IntoIterator|DoubleEndedIterator|ExactSizeIterator)\\b"
         },
-        // {
-        //   "name": "support.type.core.rust",
-        //   "match": "\\b(Error)\\b"
-        // },
         {
           "comment": "Standard library type",
           "name": "storage.class.std.rust",
@@ -76,7 +125,7 @@
               }
             },
             {
-              "match": "&('([a-zA-Z_][a-zA-Z0-9_]*))\\b",
+              "match": "&(')([a-zA-Z_][a-zA-Z0-9_]*)\\b",
               "captures": {
                 "1": {"name": "storage.modifier.lifetime.rust"},
                 "2": {"name": "entity.name.lifetime.rust"}
@@ -90,10 +139,10 @@
             //     "3": {"name": "punctuation.definition.type.rust"}
             //   }
             // },
-            {
-              "name": "punctuation.other.comma.rust",
-              "match": ","
-            },
+            // {
+            //   "name": "punctuation.other.comma.rust",
+            //   "match": ","
+            // },
           ],
         },
       ]

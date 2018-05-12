@@ -29,7 +29,7 @@
         // =============================================
         {
           "name": "keyword.operator.path.rust",
-          "match": "(::)",
+          "match": "(\\:\\:)",
         },
         {
           "name": "keyword.operator.return-type.rust",

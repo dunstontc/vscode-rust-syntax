@@ -6,9 +6,7 @@
     { "include": "#comment" },
     { "include": "#constant" },
     { "include": "#entity" },
-    { "include": "#keyword" },
     { "include": "#meta" },
-    { "include": "#operator" },
     { "include": "#punctuation" },
     { "include": "#storage" },
     { "include": "#string" },
@@ -16,8 +14,10 @@
     { "include": "#type" },
     { "include": "#unsorted" },
     { "include": "#variable" },
+    { "include": "#operator" },
+    { "include": "#keyword" },
   ],
 	"repository": {
-    "entity": {"patterns": []},
+    // "entity": {"patterns": []},
   }
 	}

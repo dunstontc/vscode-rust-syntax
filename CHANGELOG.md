@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.10
+- Highlight crate names in `extern crate ...`.
+- Highlight variable in maps (`|x|`).
+
 ## 0.0.9
 - Added version badge to readme.
 - Improved highlighting for fmt strings (`"{}"`).
@@ -21,7 +25,7 @@
 - Defined `_`  as *ignored* keyword.
 - Defined `{` & `}` as *curly*.
 - Defined `(` & `)` as *paren*.
-- DEPRECATED: 
+- DEPRECATED:
   - `string.quoted.single.rust`
   - `constant.other.placeholder.rust`
 
@@ -42,5 +46,5 @@
 ## 0.0.2
 - Marked as unstable.
 
-## 0.0.1 
+## 0.0.1
 - Init.
