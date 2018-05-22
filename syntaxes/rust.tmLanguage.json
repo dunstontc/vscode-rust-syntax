@@ -1,277 +1,5 @@
 {
     "repository": {
-        "comment": {
-            "patterns": [
-                {
-                    "name": "comment.block.documentation.rust",
-                    "begin": "/\\*[\\*!](?![\\*/])",
-                    "end": "\\*/"
-                },
-                {
-                    "name": "comment.block.rust",
-                    "begin": "/\\*",
-                    "end": "\\*/"
-                },
-                {
-                    "name": "comment.line.documentation.rust",
-                    "begin": "//[!/](?=[^/])",
-                    "end": "$"
-                },
-                {
-                    "name": "comment.line.double-slash.rust",
-                    "begin": "//",
-                    "end": "$"
-                }
-            ]
-        },
-        "entity": {
-            "patterns": [
-                {
-                    "match": "([a-zA-RT-Z][a-zA-Z_]+)(?=[(])",
-                    "name": "entity.name.function.rust"
-                },
-                {
-                    "match": "(Some)(?=[(])",
-                    "name": "support.constant.core.rust"
-                },
-                {
-                    "match": "(impl)\\s([A-Za-z][_A-Za-z0-9]++)",
-                    "captures": {
-                        "1": {
-                            "name": "keyword.other.implementation.rust"
-                        },
-                        "2": {
-                            "name": "entity.name.type.rust"
-                        }
-                    }
-                },
-                {
-                    "match": "(mod)\\s([a-zA-Z]+)",
-                    "captures": {
-                        "1": {
-                            "name": "storage.type.module.rust"
-                        },
-                        "2": {
-                            "name": "entity.name.type.module.rust"
-                        }
-                    }
-                },
-                {
-                    "comment": "Type declaration",
-                    "match": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]+)",
-                    "captures": {
-                        "1": {
-                            "name": "storage.type.rust"
-                        },
-                        "2": {
-                            "name": "entity.name.type.rust"
-                        }
-                    }
-                },
-                {
-                    "comment": "Type alias",
-                    "begin": "\\b(type)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
-                    "end": ";",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "storage.type.rust"
-                        },
-                        "2": {
-                            "name": "entity.name.type.rust"
-                        }
-                    }
-                }
-            ]
-        },
-        "operator": {
-            "patterns": [
-                {
-                    "name": "keyword.operator.member-access.rust",
-                    "match": "(\\.)(?=parse)"
-                },
-                {
-                    "name": "keyword.operator.member-access.rust",
-                    "match": "\\s(\\.)\\b"
-                },
-                {
-                    "name": "keyword.operator.member-access.rust",
-                    "match": "\\b(\\.)\\b"
-                },
-                {
-                    "name": "keyword.operator.member-access.rust",
-                    "match": "\\B(\\.)\\b"
-                },
-                {
-                    "name": "keyword.operator.member-access.rust",
-                    "match": "(\\.)(?=to_string)"
-                },
-                {
-                    "name": "keyword.operator.range.rust",
-                    "match": "(\\.\\.)"
-                },
-                {
-                    "name": "keyword.operator.path.rust",
-                    "match": "(\\:\\:)"
-                },
-                {
-                    "name": "keyword.operator.return-type.rust",
-                    "match": "(->)"
-                },
-                {
-                    "name": "keyword.operator.match.rust",
-                    "match": "(=>)"
-                },
-                {
-                    "name": "variable.language.ignored.rust",
-                    "match": "\\b(_)\\b"
-                },
-                {
-                    "name": "keyword.operator.sigil.rust",
-                    "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)"
-                },
-                {
-                    "name": "keyword.operator.assignment.rust",
-                    "match": "(\\=)"
-                },
-                {
-                    "name": "keyword.operator.assignment.rust",
-                    "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)"
-                },
-                {
-                    "name": "keyword.operator.arithmetic.rust",
-                    "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
-                },
-                {
-                    "name": "keyword.operator.comparison.rust",
-                    "match": "(&&|\\|\\||==|!=)"
-                },
-                {
-                    "name": "keyword.operator.comparison.rust",
-                    "match": "\\s(<|>)"
-                },
-                {
-                    "name": "keyword.operator.comparison.rust",
-                    "match": "\\B(<=|>=)\\B"
-                }
-            ]
-        },
-        "punctuation": {
-            "patterns": [
-                {
-                    "name": "punctuation.separator.type.rust",
-                    "match": ":\\s+?(?=(&|bool|char|usize|isize|u8|u16|u32|u64|u128|i8|i16|i32|i64|i128|f32|f64|str|Self|Option|Result|Box|String|Vec|Path|PathBuf))"
-                },
-                {
-                    "name": "punctuation.terminator.rust",
-                    "match": ";"
-                },
-                {
-                    "name": "punctuation.other.comma.rust",
-                    "match": ","
-                },
-                {
-                    "name": "punctuation.other.paren.rust",
-                    "match": "[)(]"
-                }
-            ]
-        },
-        "storage": {
-            "patterns": [
-                {
-                    "name": "storage.modifier.mutable.rust",
-                    "match": "\\b(mut)\\b"
-                },
-                {
-                    "name": "storage.modifier.box.rust",
-                    "match": "\\b(box)\\b"
-                },
-                {
-                    "name": "storage.modifier.const.rust",
-                    "match": "\\b(const)\\b"
-                },
-                {
-                    "name": "storage.modifier.visibility.rust",
-                    "match": "\\b(pub)\\b"
-                },
-                {
-                    "name": "storage.modifier.static.rust",
-                    "match": "\\b(static)\\b"
-                },
-                {
-                    "name": "storage.type.module.rust",
-                    "match": "\\b(mod)\\b"
-                },
-                {
-                    "name": "storage.type.function.rust",
-                    "match": "\\b(fn)\\b"
-                },
-                {
-                    "name": "storage.type.rust",
-                    "match": "\\b(let)\\b"
-                },
-                {
-                    "name": "storage.type.rust",
-                    "match": "\\b(enum|impl|struct|trait|union)\\b"
-                },
-                {
-                    "name": "storage.modifier.lifetime.rust",
-                    "match": "'([a-zA-Z_][a-zA-Z0-9_]*)\\b(!')",
-                    "captures": {
-                        "1": {
-                            "name": "entity.name.lifetime.rust"
-                        }
-                    }
-                },
-                {
-                    "match": "(&)('([a-zA-Z0-9_]*))(!')",
-                    "captures": {
-                        "1": {
-                            "name": "keyword.operator.sigil.rust"
-                        },
-                        "2": {
-                            "name": "storage.modifier.lifetime.rust"
-                        },
-                        "3": {
-                            "name": "entity.name.lifetime.rust"
-                        }
-                    }
-                }
-            ]
-        },
-        "support": {
-            "patterns": [
-                {
-                    "comment": "Built-in macro",
-                    "name": "support.function.builtin.rust",
-                    "match": "\\b(macro_rules|compile_error|format_args|env|option_env|concat_idents|concat|line|column|file|stringify|include|include_str|include_bytes|module_path|cfg)!"
-                },
-                {
-                    "comment": "Core macro",
-                    "name": "support.function.core.rust",
-                    "match": "\\b(panic|assert|assert_eq|assert_ne|debug_assert|debug_assert_eq|debug_assert_ne|try|write|writeln|unreachable|unimplemented)!"
-                },
-                {
-                    "comment": "Standard library macro",
-                    "name": "support.function.std.rust",
-                    "match": "\\b(format|print|println|eprint|eprintln|select|vec)!"
-                },
-                {
-                    "comment": "Logging macro",
-                    "name": "support.function.log.rust",
-                    "match": "\\b(log|error|warn|info|debug|trace|log_enabled)!"
-                },
-                {
-                    "comment": "Core type variant",
-                    "name": "support.constant.core.rust",
-                    "match": "\\b(Some|None|Ok|Err)\\b"
-                },
-                {
-                    "comment": "Core type variant",
-                    "name": "support.constant.core.rust",
-                    "match": "\\b(Some)"
-                }
-            ]
-        },
         "constant": {
             "patterns": [
                 {
@@ -445,8 +173,23 @@
                     }
                 },
                 {
+                    "match": "((?<=::))([a-zA-Z_]+)",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.operator.path.rust"
+                        },
+                        "2": {
+                            "name": "entity.name.type.rust"
+                        }
+                    }
+                },
+                {
                     "name": "storage.type.core.rust",
                     "match": "\\b(bool|char|usize|isize|u8|u16|u32|u64|u128|i8|i16|i32|i64|i128|f32|f64|str|Self|Option|Result)\\b"
+                },
+                {
+                    "name": "entity.name.type.hashmap.rust",
+                    "match": "HashMap"
                 },
                 {
                     "comment": "Core trait (marker)",
@@ -517,6 +260,14 @@
                                     "name": "entity.name.lifetime.rust"
                                 }
                             }
+                        },
+                        {
+                            "name": "punctuation.other.comma.rust",
+                            "match": ","
+                        },
+                        {
+                            "name": "variable.language.ignored.rust",
+                            "match": "\\b(_)\\b"
                         }
                     ]
                 }
@@ -524,6 +275,14 @@
         },
         "variable": {
             "patterns": [
+                {
+                    "match": "([a-zA-Z_][a-zA-Z0-9_]+)(?=[:] )",
+                    "captures": {
+                        "1": {
+                            "name": "variable.other.rust"
+                        }
+                    }
+                },
                 {
                     "match": "([|])(\\w+)([|])",
                     "captures": {
@@ -537,6 +296,278 @@
                             "name": "keyword.operator.rust"
                         }
                     }
+                }
+            ]
+        },
+        "comment": {
+            "patterns": [
+                {
+                    "name": "comment.block.documentation.rust",
+                    "begin": "/\\*[\\*!](?![\\*/])",
+                    "end": "\\*/"
+                },
+                {
+                    "name": "comment.block.rust",
+                    "begin": "/\\*",
+                    "end": "\\*/"
+                },
+                {
+                    "name": "comment.line.documentation.rust",
+                    "begin": "//[!/](?=[^/])",
+                    "end": "$"
+                },
+                {
+                    "name": "comment.line.double-slash.rust",
+                    "begin": "//",
+                    "end": "$"
+                }
+            ]
+        },
+        "entity": {
+            "patterns": [
+                {
+                    "match": "([a-zA-RT-Z][a-zA-Z_]+)(?=[(])",
+                    "name": "entity.name.function.rust"
+                },
+                {
+                    "match": "(Some)(?=[(])",
+                    "name": "support.constant.core.rust"
+                },
+                {
+                    "match": "(impl)\\s([A-Za-z][_A-Za-z0-9]++)",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.other.implementation.rust"
+                        },
+                        "2": {
+                            "name": "entity.name.type.rust"
+                        }
+                    }
+                },
+                {
+                    "match": "(mod)\\s([a-zA-Z]+)",
+                    "captures": {
+                        "1": {
+                            "name": "storage.type.module.rust"
+                        },
+                        "2": {
+                            "name": "entity.name.type.module.rust"
+                        }
+                    }
+                },
+                {
+                    "comment": "Type declaration",
+                    "match": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]+)",
+                    "captures": {
+                        "1": {
+                            "name": "storage.type.rust"
+                        },
+                        "2": {
+                            "name": "entity.name.type.rust"
+                        }
+                    }
+                },
+                {
+                    "comment": "Type alias",
+                    "begin": "\\b(type)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+                    "end": ";",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "storage.type.rust"
+                        },
+                        "2": {
+                            "name": "entity.name.type.rust"
+                        }
+                    }
+                }
+            ]
+        },
+        "operator": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.member-access.rust",
+                    "match": "(\\.)(?=parse)"
+                },
+                {
+                    "name": "keyword.operator.member-access.rust",
+                    "match": "\\s(\\.)\\b"
+                },
+                {
+                    "name": "keyword.operator.member-access.rust",
+                    "match": "\\b(\\.)\\b"
+                },
+                {
+                    "name": "keyword.operator.member-access.rust",
+                    "match": "\\B(\\.)\\b"
+                },
+                {
+                    "name": "keyword.operator.member-access.rust",
+                    "match": "(\\.)(?=to_string)"
+                },
+                {
+                    "name": "keyword.operator.range.rust",
+                    "match": "(\\.\\.)"
+                },
+                {
+                    "name": "keyword.operator.path.rust",
+                    "match": "(\\:\\:)"
+                },
+                {
+                    "name": "keyword.operator.return-type.rust",
+                    "match": "(->)"
+                },
+                {
+                    "name": "keyword.operator.match.rust",
+                    "match": "(=>)"
+                },
+                {
+                    "name": "variable.language.ignored.rust",
+                    "match": "\\b(_)\\b"
+                },
+                {
+                    "name": "keyword.operator.sigil.rust",
+                    "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)"
+                },
+                {
+                    "name": "keyword.operator.assignment.rust",
+                    "match": "(\\=)"
+                },
+                {
+                    "name": "keyword.operator.assignment.rust",
+                    "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)"
+                },
+                {
+                    "name": "keyword.operator.arithmetic.rust",
+                    "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
+                },
+                {
+                    "name": "keyword.operator.comparison.rust",
+                    "match": "(&&|\\|\\||==|!=)"
+                },
+                {
+                    "name": "keyword.operator.comparison.rust",
+                    "match": "\\s(<|>)"
+                },
+                {
+                    "name": "keyword.operator.comparison.rust",
+                    "match": "\\B(<=|>=)\\B"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punctuation.separator.type.rust",
+                    "match": ":\\s+?(?=(&|bool|char|usize|isize|u8|u16|u32|u64|u128|i8|i16|i32|i64|i128|f32|f64|str|Self|Option|Result|Box|String|Vec|Path|PathBuf|HashMap))"
+                },
+                {
+                    "name": "punctuation.terminator.rust",
+                    "match": ";"
+                },
+                {
+                    "name": "punctuation.other.comma.rust",
+                    "match": ","
+                },
+                {
+                    "name": "punctuation.other.paren.rust",
+                    "match": "[)(]"
+                }
+            ]
+        },
+        "storage": {
+            "patterns": [
+                {
+                    "name": "storage.modifier.mutable.rust",
+                    "match": "\\b(mut)\\b"
+                },
+                {
+                    "name": "storage.modifier.box.rust",
+                    "match": "\\b(box)\\b"
+                },
+                {
+                    "name": "storage.modifier.const.rust",
+                    "match": "\\b(const)\\b"
+                },
+                {
+                    "name": "storage.modifier.visibility.rust",
+                    "match": "\\b(pub)\\b"
+                },
+                {
+                    "name": "storage.modifier.static.rust",
+                    "match": "\\b(static)\\b"
+                },
+                {
+                    "name": "storage.type.module.rust",
+                    "match": "\\b(mod)\\b"
+                },
+                {
+                    "name": "storage.type.function.rust",
+                    "match": "\\b(fn)\\b"
+                },
+                {
+                    "name": "storage.type.rust",
+                    "match": "\\b(let)\\b"
+                },
+                {
+                    "name": "storage.type.rust",
+                    "match": "\\b(enum|impl|struct|trait|union)\\b"
+                },
+                {
+                    "name": "storage.modifier.lifetime.rust",
+                    "match": "'([a-zA-Z_][a-zA-Z0-9_]*)\\b(!')",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.lifetime.rust"
+                        }
+                    }
+                },
+                {
+                    "match": "(&)('([a-zA-Z0-9_]*))(!')",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.operator.sigil.rust"
+                        },
+                        "2": {
+                            "name": "storage.modifier.lifetime.rust"
+                        },
+                        "3": {
+                            "name": "entity.name.lifetime.rust"
+                        }
+                    }
+                }
+            ]
+        },
+        "support": {
+            "patterns": [
+                {
+                    "comment": "Built-in macro",
+                    "name": "support.function.builtin.rust",
+                    "match": "\\b(macro_rules|compile_error|format_args|env|option_env|concat_idents|concat|line|column|file|stringify|include|include_str|include_bytes|module_path|cfg)!"
+                },
+                {
+                    "comment": "Core macro",
+                    "name": "support.function.core.rust",
+                    "match": "\\b(panic|assert|assert_eq|assert_ne|debug_assert|debug_assert_eq|debug_assert_ne|try|write|writeln|unreachable|unimplemented)!"
+                },
+                {
+                    "comment": "Standard library macro",
+                    "name": "support.function.std.rust",
+                    "match": "\\b(format|print|println|eprint|eprintln|select|vec)!"
+                },
+                {
+                    "comment": "Logging macro",
+                    "name": "support.function.log.rust",
+                    "match": "\\b(log|error|warn|info|debug|trace|log_enabled)!"
+                },
+                {
+                    "comment": "Core type variant",
+                    "name": "support.constant.core.rust",
+                    "match": "\\b(Some|None|Ok|Err)\\b"
+                },
+                {
+                    "comment": "Core type variant",
+                    "name": "support.constant.core.rust",
+                    "match": "\\b(Some)"
                 }
             ]
         }

@@ -23,9 +23,7 @@
               "name": "constant.other.placeholder.rust",
               "begin": "{",
               "end": "}",
-              "patterns": [
-
-              ],
+              "patterns": [],
             },
           ]
         },

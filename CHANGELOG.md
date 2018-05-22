@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.11
+- Added type highlight to `HashMap`.
+- Testing new variable highlighting.
+
 ## 0.0.10
 - Highlight crate names in `extern crate ...`.
 - Highlight variable in maps (`|x|`).

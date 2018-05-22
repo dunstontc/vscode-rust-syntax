@@ -2,36 +2,11 @@
   "repository": {
     "type": {
       "patterns": [
-        // {
-        //   "name": "entity.name.type.rust",
-        //   "match": "\\b([A-Za-z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b"
-        // },
-        // {
-        //   "match": "[_a-zA-Z]+::([_a-zA-Z]+)(?=[^(])*",
-        //   "captures": {
-        //     "1": {"name": "entity.name.type.rust"},
-        //     "2": {"name": "keyword.operator.path.rust"},
-        //     "3": {"name": "entity.name.type.rust"},
-        //   },
-        // },
-        // {
-        //   "match": "([_a-zA-Z]+)(::)([_a-zA-Z]+)\\b!\\(",
-        //   "captures": {
-        //     "1": {"name": "entity.name.type.rust"},
-        //     "2": {"name": "keyword.operator.path.rust"},
-        //     "3": {"name": "entity.name.type.rust"},
-        //   },
-        // },
         {
-          // "name": "entity.name.type.rust",
           "begin": "(\\:\\:){",
-          "beginCaptures": {
-            "1": {"name": "keyword.operator.path.rust"},
-          },
+          "beginCaptures": {"1": {"name": "keyword.operator.path.rust"}},
           "end": "}(;)",
-          "endCaptures": {
-            "1": {"name": "punctuation.terminator.rust"},
-          },
+          "endCaptures": {"1": {"name": "punctuation.terminator.rust"}},
           "patterns": [
             {
               "name": "punctuation.other.comma.rust",
@@ -44,7 +19,6 @@
           ],
         },
         {
-          // "name": "entity.name.type.crate.rust",
           "match": "^(extern) (crate) ([_A-Za-z0-9]+)",
           "captures": {
             "1": {"name": "keyword.other.rust"},
@@ -59,13 +33,22 @@
         {
           "match": "([a-zA-Z_]+)(?=::)",
           "name": "entity.name.type.mod.rust",
+          "captures": {"2": {"name": "keyword.operator.path.rust"}},
+        },
+        {
+          "match": "((?<=::))([a-zA-Z_]+)",
           "captures": {
-            "2": {"name": "keyword.operator.path.rust"},
+            "1": {"name": "keyword.operator.path.rust"},
+            "2": {"name": "entity.name.type.rust"},
           },
         },
         {
           "name": "storage.type.core.rust",
           "match": "\\b(bool|char|usize|isize|u8|u16|u32|u64|u128|i8|i16|i32|i64|i128|f32|f64|str|Self|Option|Result)\\b"
+        },
+        {
+          "name": "entity.name.type.hashmap.rust",
+          "match": "HashMap"
         },
         {
           "comment": "Core trait (marker)",
@@ -120,9 +103,7 @@
             {
               "name": "storage.modifier.lifetime.rust",
               "match": "'([a-zA-Z_][a-zA-Z0-9_]*)\\b",
-              "captures": {
-                "1": {"name": "entity.name.lifetime.rust"}
-              }
+              "captures": {"1": {"name": "entity.name.lifetime.rust"}}
             },
             {
               "match": "&(')([a-zA-Z_][a-zA-Z0-9_]*)\\b",
@@ -130,6 +111,14 @@
                 "1": {"name": "storage.modifier.lifetime.rust"},
                 "2": {"name": "entity.name.lifetime.rust"}
               }
+            },
+            {
+              "name": "punctuation.other.comma.rust",
+              "match": ","
+            },
+            {
+              "name": "variable.language.ignored.rust",
+              "match": "\\b(_)\\b",
             },
             // {
             //   "match": "(<)('[a-zA-Z_][a-zA-Z0-9_]*)(>)",
