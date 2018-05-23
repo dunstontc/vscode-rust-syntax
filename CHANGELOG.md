@@ -1,7 +1,8 @@
 # Change Log
 
 ## 0.0.12
-- Improved highlighting for fmt strings (`"{}"`).
+- Improved highlighting for fmt strings (again).
+- Highlight module names with underscores.
 
 ## 0.0.11
 - Added type highlight to `HashMap`.

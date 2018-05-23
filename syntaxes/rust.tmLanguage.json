@@ -345,7 +345,7 @@
                     }
                 },
                 {
-                    "match": "(mod)\\s([a-zA-Z]+)",
+                    "match": "(mod)\\s([a-zA-Z_]+)",
                     "captures": {
                         "1": {
                             "name": "storage.type.module.rust"
