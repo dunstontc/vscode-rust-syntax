@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.12
+- Improved highlighting for fmt strings (`"{}"`).
+
 ## 0.0.11
 - Added type highlight to `HashMap`.
 - Testing new variable highlighting.

@@ -107,7 +107,7 @@
                         {
                             "name": "constant.other.placeholder.rust",
                             "begin": "{",
-                            "end": "}",
+                            "end": "}|\"",
                             "patterns": []
                         }
                     ]
