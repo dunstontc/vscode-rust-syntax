@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.18
+- Highlight type names in method statements.
+
 ## 0.0.17
 - Fixed highlighting for method keyword with generic type params.
   - (ex: `impl<T> ...`)
