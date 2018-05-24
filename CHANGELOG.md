@@ -1,6 +1,11 @@
 # Change Log
 
-## 0.0.14
+## 0.0.16
+- Fixed an issue where module names with numbers wern't being highlighted.
+- Added additional variable highlighting.
+- *Ensured* correct highlighting for function names with type params.
+
+## 0.0.15
 - Testing limited markdown support in doc comments (bold, italic, code strings, headings, and links).
 
 ## 0.0.14
@@ -44,7 +49,6 @@
 - Defined `(` & `)` as *paren*.
 - DEPRECATED:
   - `string.quoted.single.rust`
-  - `constant.other.placeholder.rust`
 
 ## 0.0.5
 - Fixed an issue with comments.

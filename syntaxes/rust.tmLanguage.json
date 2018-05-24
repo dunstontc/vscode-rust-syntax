@@ -162,7 +162,7 @@
                     "name": "entity.name.type.rust"
                 },
                 {
-                    "match": "([a-zA-Z_]+)(?=::)",
+                    "match": "([A-Za-z][_A-Za-z0-9]+)(?=::)",
                     "name": "entity.name.type.mod.rust",
                     "captures": {
                         "2": {
@@ -188,6 +188,14 @@
                 {
                     "name": "entity.name.type.hashmap.rust",
                     "match": "HashMap"
+                },
+                {
+                    "match": "(?<=-> )(T)",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.type.generic.rust"
+                        }
+                    }
                 },
                 {
                     "comment": "Core trait (marker)",
@@ -274,7 +282,21 @@
         "variable": {
             "patterns": [
                 {
-                    "match": "([a-zA-Z_][a-zA-Z0-9_]+)(?=[:] )",
+                    "match": "(let) (mut) ([a-zA-Z_][a-zA-Z0-9_]+)",
+                    "captures": {
+                        "1": {
+                            "name": "storage.type.rust"
+                        },
+                        "2": {
+                            "name": "storage.modifier.mutable.rust"
+                        },
+                        "3": {
+                            "name": "variable.other.mutable.rust"
+                        }
+                    }
+                },
+                {
+                    "match": "([a-zA-Z_]([a-zA-Z0-9_]+)?)(?=[:] )",
                     "captures": {
                         "1": {
                             "name": "variable.other.rust"
@@ -518,8 +540,30 @@
         "entity": {
             "patterns": [
                 {
+                    "match": "(?<=fn )([a-zA-RT-Z][a-zA-Z0-9_]+)",
+                    "name": "entity.name.function.rust"
+                },
+                {
                     "match": "([a-zA-RT-Z][a-zA-Z0-9_]+)(?=[(])",
                     "name": "entity.name.function.rust"
+                },
+                {
+                    "match": "([a-zA-RT-Z][a-zA-Z0-9_]+)(\\<)(T)(\\>)(?=[(])",
+                    "name": "entity.name.function.rust",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.function.rust"
+                        },
+                        "2": {
+                            "name": "punctuation.definition.type.rust"
+                        },
+                        "3": {
+                            "name": "entity.name.type.generic.rust"
+                        },
+                        "4": {
+                            "name": "punctuation.definition.type.rust"
+                        }
+                    }
                 },
                 {
                     "match": "(Some)(?=[(])",
@@ -784,9 +828,6 @@
             "include": "#punctuation"
         },
         {
-            "include": "#storage"
-        },
-        {
             "include": "#string"
         },
         {
@@ -806,6 +847,9 @@
         },
         {
             "include": "#keyword"
+        },
+        {
+            "include": "#storage"
         }
     ]
 }

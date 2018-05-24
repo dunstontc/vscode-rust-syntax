@@ -31,7 +31,7 @@
           "name": "entity.name.type.rust",
         },
         {
-          "match": "([a-zA-Z_]+)(?=::)",
+          "match": "([A-Za-z][_A-Za-z0-9]+)(?=::)",
           "name": "entity.name.type.mod.rust",
           "captures": {"2": {"name": "keyword.operator.path.rust"}},
         },
@@ -49,6 +49,13 @@
         {
           "name": "entity.name.type.hashmap.rust",
           "match": "HashMap"
+        },
+        {
+          "match": "(?<=-> )(T)",
+          "captures": {
+            // "1": {"name": "keyword.operator.path.rust"},
+            "1": {"name": "entity.name.type.generic.rust"},
+          },
         },
         {
           "comment": "Core trait (marker)",
@@ -120,18 +127,6 @@
               "name": "variable.language.ignored.rust",
               "match": "\\b(_)\\b",
             },
-            // {
-            //   "match": "(<)('[a-zA-Z_][a-zA-Z0-9_]*)(>)",
-            //   "captures": {
-            //     "1": {"name": "punctuation.definition.type.rust"},
-            //     "2": {"name": "entity.name.lifetime.rust"},
-            //     "3": {"name": "punctuation.definition.type.rust"}
-            //   }
-            // },
-            // {
-            //   "name": "punctuation.other.comma.rust",
-            //   "match": ","
-            // },
           ],
         },
       ]

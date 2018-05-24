@@ -2,15 +2,16 @@
   "repository": {
     "variable": {
       "patterns": [
-        // {
-        //   "match": "(?<=let) (mut\\s)?([a-zA-Z_]+[a-zA-Z0-9_]+)",
-        //   "captures": {
-        //     "1": {"name": "storage.modifier.mutable.rust"},
-        //     "2": {"name": "variable.other.rust"},
-        //   },
-        // },
         {
-          "match": "([a-zA-Z_][a-zA-Z0-9_]+)(?=[:] )",
+          "match": "(let) (mut) ([a-zA-Z_][a-zA-Z0-9_]+)",
+          "captures": {
+            "1": {"name": "storage.type.rust"},
+            "2": {"name": "storage.modifier.mutable.rust"},
+            "3": {"name": "variable.other.mutable.rust"},
+          },
+        },
+        {
+          "match": "([a-zA-Z_]([a-zA-Z0-9_]+)?)(?=[:] )",
           "captures": {"1": {"name": "variable.other.rust"}},
         },
         {

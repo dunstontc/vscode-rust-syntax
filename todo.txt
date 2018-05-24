@@ -10,10 +10,12 @@ x 2018-05-06 2018-05-06 Fix highlighting for "Some()" (with parens).
 x 2018-05-06 2018-05-06 Fix "." accessor after parens.
 x 2018-05-11 2018-05-06 Highlight variables in map functions.
 x 2018-05-11 2018-05-02 Add full support for "<T>".
-2018-05-02 Add full support for ":" (punctuation.separator.type.rust)
+x 2018-05-23 2018-05-23 Improve support for "{}" placeholders.
+x 2018-05-02 Add full support for ":" (punctuation.separator.type.rust)
+(A) 2018-05-21 Support multibyte characters.
 2018-05-06 Fix issue with "self::path::path"
 2018-05-10 Ensure correct highlighting for lifetimes.
 2018-05-10 Add support for `struct update syntax` ("\s+(\.\.)\w+")
 2018-05-11 Look into "&[ref]".
-2018-05-21 Support multibyte characters.
 2018-05-23 Improve support for "{}" placeholders.
+2018-05-24 Highlight function names with type params.
