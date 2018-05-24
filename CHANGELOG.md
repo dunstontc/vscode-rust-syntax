@@ -1,6 +1,9 @@
 # Change Log
 
 ## 0.0.14
+- Testing limited markdown support in doc comments (bold, italic, code strings, headings, and links).
+
+## 0.0.14
 - Highlight functions names that include (*but don't begin with*) numbers.
 
 ## 0.0.13
