@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.14
+- Highlight functions names that include (*but don't begin with*) numbers.
+
 ## 0.0.13
 - Improved highlighting for fmt strings (final time, should be solid now).
 
