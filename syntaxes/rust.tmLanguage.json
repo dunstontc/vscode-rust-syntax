@@ -106,9 +106,7 @@
                         },
                         {
                             "name": "constant.other.placeholder.rust",
-                            "begin": "{",
-                            "end": "}|\"",
-                            "patterns": []
+                            "match": "(\\{)([a-zA-Z0-9_?:$.*<>]+)?(\\})"
                         }
                     ]
                 },

@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.13
+- Improved highlighting for fmt strings (final time, should be solid now).
+
 ## 0.0.12
 - Improved highlighting for fmt strings (again).
 - Highlight module names with underscores.

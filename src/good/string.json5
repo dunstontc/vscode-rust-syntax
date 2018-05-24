@@ -21,9 +21,13 @@
             },
             {
               "name": "constant.other.placeholder.rust",
-              "begin": "{",
-              "end": "}|\"",
-              "patterns": [],
+              // "begin": "{",
+              // "end": "}|\"",
+              "match": "(\\{)([a-zA-Z0-9_?:$.*<>]+)?(\\})",
+              // "captures": {
+              //   "1": {"name": "storage.modifier.lifetime.rust"},
+              //   "2": {"name": "entity.name.lifetime.rust"}
+              // },
             },
           ]
         },
