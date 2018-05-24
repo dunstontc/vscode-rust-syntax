@@ -36,6 +36,10 @@
         },
         {
           "name": "storage.type.rust",
+          "match": "(impl)(?=<)",
+        },
+        {
+          "name": "storage.type.rust",
           "match": "\\b(enum|impl|struct|trait|union)\\b"
         },
         {

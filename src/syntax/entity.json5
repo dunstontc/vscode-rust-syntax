@@ -26,11 +26,8 @@
           "name": "support.constant.core.rust",
         },
         {
-          "match": "(impl)\\s([A-Za-z][_A-Za-z0-9]++)",
-          "captures": {
-            "1": {"name": "keyword.other.implementation.rust"},
-            "2": {"name": "entity.name.type.rust"}
-          },
+          "name": "storage.type.rust",
+          "match": "impl(?=<)",
         },
         {
           "match": "(mod)\\s([a-zA-Z_]+)",
@@ -39,16 +36,6 @@
             "2": {"name": "entity.name.type.module.rust"}
           },
         },
-        // {
-        //   "match": "\\b([A-Za-z][A-Za-z0-9_]*|_[A-Za-z0-9_]+)\\s*\\(",
-        //   "name": "entity.name.function.rust",
-        // },
-        // {
-        //   "comment": "Function call with type parameters",
-        //   "begin": "\\b([A-Za-z][A-Za-z0-9_]*|_[A-Za-z0-9_]+)\\s*::(?=\\s*<.*>\\s*\\()",
-        //   "end": "\\(",
-        //   "captures": {"1": {"name": "entity.name.function.rust"}},
-        // },
         {
           "comment": "Type declaration",
           "match": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]+)",

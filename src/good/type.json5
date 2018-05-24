@@ -120,6 +120,10 @@
               }
             },
             {
+              "name": "storage.type.rust",
+              "match": "impl"
+            },
+            {
               "name": "punctuation.other.comma.rust",
               "match": ","
             },

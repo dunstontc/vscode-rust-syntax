@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.17
+- Fixed highlighting for method keyword with generic type params.
+  - (ex: `impl<T> ...`)
+- Highlight single letter function names.
+
 ## 0.0.16
 - Fixed an issue where module names with numbers wern't being highlighted.
 - Added additional variable highlighting.
