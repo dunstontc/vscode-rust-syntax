@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.19
+- Highlight variables in variable declarations.
+- Highlight `T` & `U` as *entity.name.type.generic.rust*.
+
 ## 0.0.18
 - Highlight type names in method statements.
 

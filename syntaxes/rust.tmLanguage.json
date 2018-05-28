@@ -218,6 +218,14 @@
                     }
                 },
                 {
+                    "match": "\\b(T|U)\\b",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.type.generic.rust"
+                        }
+                    }
+                },
+                {
                     "match": "(impl) (?:[a-zA-Z_][a-zA-Z0-9:_]+) (for) ([a-zA-Z_][a-zA-Z0-9_]+) \\{",
                     "captures": {
                         "1": {
@@ -330,6 +338,14 @@
                         },
                         "3": {
                             "name": "variable.other.mutable.rust"
+                        }
+                    }
+                },
+                {
+                    "match": "([a-zA-Z_]([a-zA-Z0-9_]+)?)\\s(?==)",
+                    "captures": {
+                        "1": {
+                            "name": "variable.other.rust"
                         }
                     }
                 },

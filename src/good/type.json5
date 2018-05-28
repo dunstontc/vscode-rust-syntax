@@ -58,6 +58,13 @@
           },
         },
         {
+          "match": "\\b(T|U)\\b",
+          "captures": {
+            // "1": {"name": "keyword.operator.path.rust"},
+            "1": {"name": "entity.name.type.generic.rust"},
+          },
+        },
+        {
           // "name": "storage.type.rust,
           "match": "(impl) (?:[a-zA-Z_][a-zA-Z0-9:_]+) (for) ([a-zA-Z_][a-zA-Z0-9_]+) \\{",
           "captures": {
