@@ -17,5 +17,6 @@
     { "include": "#keyword" },
     { "include": "#storage" },
   ],
-	"repository": {}
+	"repository": {
+  }
 	}

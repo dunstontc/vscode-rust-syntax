@@ -20,7 +20,7 @@
         },
         {
           "name": "support.constant.core.rust",
-          "match": "\\b(Some|None|Ok|Err)\\b"
+          "match": "\\b(None|Ok|Err)\\b"
         },
         {
           "name": "support.constant.core.rust",

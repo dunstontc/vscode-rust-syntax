@@ -3,10 +3,13 @@
     "type": {
       "patterns": [
         {
-          "begin": "(\\:\\:){",
+          "begin": "(\\:\\:{)",
           "beginCaptures": {"1": {"name": "keyword.operator.path.rust"}},
           "end": "}(;)",
-          "endCaptures": {"1": {"name": "punctuation.terminator.rust"}},
+          "endCaptures": {
+            "1": {"name": "keyword.operator.path.rust"},
+            "2": {"name": "punctuation.terminator.rust"},
+          },
           "patterns": [
             {
               "name": "punctuation.other.comma.rust",
@@ -53,25 +56,22 @@
         {
           "match": "(?<=-> )(T)",
           "captures": {
-            // "1": {"name": "keyword.operator.path.rust"},
             "1": {"name": "entity.name.type.generic.rust"},
           },
         },
         {
           "match": "\\b(T|U)\\b",
           "captures": {
-            // "1": {"name": "keyword.operator.path.rust"},
             "1": {"name": "entity.name.type.generic.rust"},
           },
         },
         {
-          // "name": "storage.type.rust,
-          "match": "(impl) (?:[a-zA-Z_][a-zA-Z0-9:_]+) (for) ([a-zA-Z_][a-zA-Z0-9_]+) \\{",
+          "match": "(impl) ([a-zA-Z_][a-zA-Z0-9:_<>]+) (for) ([a-zA-Z_][a-zA-Z0-9_]+) \\{",
           "captures": {
             "1": {"name": "storage.type.rust"},
-            // "2": {"name": "entity.name.function.rust"},
-            "2": {"name": "keyword.control.rust"},
-            "3": {"name": "entity.name.type.rust"}
+            "2": {"name": "entity.name.implementation.rust"},
+            "3": {"name": "keyword.control.rust"},
+            "4": {"name": "entity.name.type.rust"},
           }
         },
         {

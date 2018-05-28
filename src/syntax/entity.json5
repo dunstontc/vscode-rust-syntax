@@ -7,10 +7,6 @@
           "name": "entity.name.function.rust",
         },
         {
-          "match": "([a-zA-Z0-9_]+)(?=[(])",
-          "name": "entity.name.function.rust",
-        },
-        {
           "match": "([a-zA-RT-Z][a-zA-Z0-9_]+)(?=[(])",
           "name": "entity.name.function.rust",
         },
@@ -41,7 +37,6 @@
           },
         },
         {
-          "comment": "Type declaration",
           "match": "\\b(enum|struct|trait|union)\\s+([a-zA-Z_][a-zA-Z0-9_]+)",
           "captures": {
             "1": {"name": "storage.type.rust"},
@@ -49,7 +44,6 @@
           },
         },
         {
-          "comment": "Type alias",
           "begin": "\\b(type)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
           "end": ";",
           "beginCaptures": {
