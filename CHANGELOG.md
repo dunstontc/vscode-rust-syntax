@@ -1,7 +1,12 @@
 # Change Log
 
+## 0.0.21
+- Don't reauire spaces between variables & equals.
+- Highlight types in method (`impl`) blocks.
+- (*hopefully*) Better highlighting for structs.
+
 ## 0.0.20
-- Highlight lifetime.
+- Highlight lifetimes.
 
 ## 0.0.19
 - Highlight variables in variable declarations.
