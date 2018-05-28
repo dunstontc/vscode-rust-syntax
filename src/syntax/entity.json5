@@ -31,20 +31,16 @@
           }
         },
         {
-          "name": "entity.name.function.rust",
           "match": "(impl) ([a-zA-Z_][a-zA-Z0-9:]+)(?!for) \\{",
           "captures": {
             "1": {"name": "storage.type.rust"},
-            // "2": {"name": "entity.name.implementation.rust"},
-            "2": {"name": "entity.name.type.implementation.rust"},
+            "2": {"name": "entity.name.type.rust"},
           }
         },
         {
           "match": "(?<=\\=) ([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
           "captures": {
-            // "2": {"name": "keyword.operator.assignment.rust"},
-            "1": {"name": "entity.name.struct.rust"},
-            // "3": {"name": "entity.name.implementation.rust"},
+            "1": {"name": "entity.name.type.rust"},
           }
         },
         // =================================================

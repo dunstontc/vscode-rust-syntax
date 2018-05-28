@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.22
+- Fixed pattern from 0.0.21.
+
 ## 0.0.21
 - Don't reauire spaces between variables & equals.
 - Highlight types in method (`impl`) blocks.
