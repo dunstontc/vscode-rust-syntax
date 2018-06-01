@@ -10,12 +10,12 @@
             "3": {"name": "variable.other.mutable.rust"},
           },
         },
+        // {
+        //   "match": "(?<!:\\s)([a-zA-Z_][a-zA-Z0-9_]*)\\s?(?==)",
+        //   "captures": {"1": {"name": "variable.other.rust"}},
+        // },
         {
-          "match": "(?<!:\\s)([a-zA-Z_]([a-zA-Z0-9_]+)?)\\s?(?==)",
-          "captures": {"1": {"name": "variable.other.rust"}},
-        },
-        {
-          "match": "([a-zA-Z_]([a-zA-Z0-9_]+)?)(?=[:] )",
+          "match": "([a-zA-Z_][a-zA-Z0-9_]*)(?=[:] )",
           "captures": {"1": {"name": "variable.other.rust"}},
         },
         {
@@ -26,14 +26,14 @@
             "3": {"name": "keyword.operator.rust"},
           },
         },
-        // {
-        //   "match": "(?<=&)([a-z_]+)",
-        //   "captures": {
-        //     // "1": {"name": "keyword.operator.sigil.rust"},
-        //     // "1": {"name": "variable.language.self.rust"},
-        //     "1": {"name": "variable.other.ref.rust"},
-        //   },
-        // },
+        {
+          "match": "(?<=&|\\*)(?!mut|self)([a-z_]+)",
+          "captures": {
+            // "1": {"name": "keyword.operator.sigil.rust"},
+            // "1": {"name": "variable.language.self.rust"},
+            "1": {"name": "variable.other.ref.rust"},
+          },
+        },
       ]
     }
   }

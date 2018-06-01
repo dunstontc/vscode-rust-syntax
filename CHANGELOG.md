@@ -1,6 +1,9 @@
 # Change Log
 
 ## 0.0.25
+- Reference highlighting looks to be working.
+
+## 0.0.25
 - Reference highlighting still needs some work.
 
 ## 0.0.24

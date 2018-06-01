@@ -7,7 +7,7 @@
           "name": "entity.name.function.rust",
         },
         {
-          "match": "([a-zA-RT-Z][a-zA-Z0-9_]+)(?=[(])",
+          "match": "(?!Err|Ok|Some)([a-zA-Z][a-zA-Z0-9_]+)(?=[(])",
           "name": "entity.name.function.rust",
         },
         {
@@ -42,12 +42,15 @@
           "captures": {"1": {"name": "entity.name.type.rust"}}
         },
         {
-          "match": "^\\s+([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
-          "captures": {"1": {"name": "entity.name.type.rust"}}
+          "match": "(^\\s+|(Ok)\\()([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
+          "captures": {
+            "2": {"name": "support.constant.core.rust"},
+            "3": {"name": "entity.name.type.rust"},
+          }
         },
         // =================================================
         {
-          "match": "(Some)(?=[(])",
+          "match": "(Err|Ok|Some)(?=[(])",
           "name": "support.constant.core.rust",
         },
         {
