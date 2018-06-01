@@ -257,12 +257,9 @@
                     "match": "HashMap"
                 },
                 {
-                    "match": "(?<=->\\s)(&)?(\\w+)",
+                    "match": "(?<=->\\s)(\\w+)",
                     "captures": {
                         "1": {
-                            "name": "keyword.operator.sigil.rust"
-                        },
-                        "2": {
                             "name": "entity.name.type.rust"
                         }
                     }
@@ -400,17 +397,6 @@
                         },
                         "3": {
                             "name": "keyword.operator.rust"
-                        }
-                    }
-                },
-                {
-                    "match": "(?<=&)(self)?([a-zA-Z0-9_]+)?",
-                    "captures": {
-                        "1": {
-                            "name": "variable.language.self.rust"
-                        },
-                        "2": {
-                            "name": "variable.other.ref.rust"
                         }
                     }
                 }
@@ -802,11 +788,11 @@
                 },
                 {
                     "name": "keyword.operator.assignment.rust",
-                    "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)"
+                    "match": "\\b(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)\\b"
                 },
                 {
                     "name": "keyword.operator.arithmetic.rust",
-                    "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)"
+                    "match": "(!|\\+|-|/|\\*|%|\\^|\\||<<|>>)"
                 },
                 {
                     "name": "keyword.operator.comparison.rust",

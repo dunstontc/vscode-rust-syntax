@@ -54,11 +54,11 @@
         },
         {
           "name": "keyword.operator.assignment.rust",
-          "match": "(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)",
+          "match": "\\b(\\+=|-=|/=|\\*=|%=|\\^=|&=|\\|=|<<=|>>=|=)\\b",
         },
         {
           "name": "keyword.operator.arithmetic.rust",
-          "match": "(!|\\+|-|/|\\*|%|\\^|&|\\||<<|>>)",
+          "match": "(!|\\+|-|/|\\*|%|\\^|\\||<<|>>)",
         },
         {
           "name": "keyword.operator.comparison.rust",

@@ -54,17 +54,15 @@
           "match": "HashMap"
         },
         {
-          "match": "(?<=->\\s)(&)?(\\w+)",
+          "match": "(?<=->\\s)(\\w+)",
           "captures": {
-            "1": {"name": "keyword.operator.sigil.rust"},
-            "2": {"name": "entity.name.type.rust"},
+            // "1": {"name": "keyword.operator.sigil.rust"},
+            "1": {"name": "entity.name.type.rust"},
           },
         },
         {
           "match": "\\b(T|U)\\b",
-          "captures": {
-            "1": {"name": "entity.name.type.generic.rust"},
-          },
+          "captures": {"1": {"name": "entity.name.type.generic.rust"}},
         },
         {
           // "comment": "Core trait (marker)",

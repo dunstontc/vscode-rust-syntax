@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.25
+- Reference highlighting still needs some work.
+
 ## 0.0.24
 - More improvement to struct highlighting.
 - Highlight references as variables.
