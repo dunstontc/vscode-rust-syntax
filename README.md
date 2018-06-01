@@ -7,7 +7,6 @@
 - [zargony/atom-language-rust](https://github.com/zargony/atom-language-rust) was used as the starting point for this project.
 - [Microsoft/vscode-markdown-tm-grammar](https://github.com/Microsoft/vscode-markdown-tm-grammar) provides the code for markdown support.
 - [The Book](https://doc.rust-lang.org/book/second-edition/appendix-01-keywords.html)
-- [Module std::fmt](https://doc.rust-lang.org/std/fmt/#syntax)
 - [kkos/oniguruma/doc/RE](https://github.com/kkos/oniguruma/blob/master/doc/RE)
 - [Scope Naming](https://www.sublimetext.com/docs/3/scope_naming.html)
 

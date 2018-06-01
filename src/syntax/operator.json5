@@ -45,6 +45,15 @@
         },
         // =============================================
         {
+          "name": "keyword.operator.error-propagation.rust",
+          "match": "(?<=\\))(\\?)",
+        },
+        {
+          "name": "keyword.operator.glob.rust",
+          "match": "(?<=::)(\\*)(?=;)",
+        },
+        // =============================================
+        {
           "name": "keyword.operator.sigil.rust",
           "match": "[&*](?=[a-zA-Z0-9_\\(\\[\\|\\\"]+)",
         },

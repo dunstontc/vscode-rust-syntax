@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.28
+- Defined `*`  as *glob* operator.
+- Defined `?`  as *error-propagation* operator.
+
 ## 0.0.27
 - Last tweak to variable highlighting for the time being.
 
