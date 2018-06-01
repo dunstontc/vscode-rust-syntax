@@ -3,7 +3,7 @@
     "entity": {
       "patterns": [
         {
-          "match": "(?<=fn )([a-zA-RT-Z][a-zA-Z0-9_]+)",
+          "match": "(?<=fn )([a-zA-Z][a-zA-Z0-9_]+)",
           "name": "entity.name.function.rust",
         },
         {
@@ -11,7 +11,11 @@
           "name": "entity.name.function.rust",
         },
         {
-          "match": "([a-zA-RT-Z][a-zA-Z0-9_]+)(\\<)(T)(\\>)(?=[(])",
+          "match": "(?!Err|Ok|Some)([a-zA-Z]+)(?=[(])",
+          "name": "entity.name.function.rust",
+        },
+        {
+          "match": "([a-zA-Z][a-zA-Z0-9_]+)(\\<)(T)(\\>)(?=[(])",
           "name": "entity.name.function.rust",
           "captures": {
             "1": {"name": "entity.name.function.rust"},

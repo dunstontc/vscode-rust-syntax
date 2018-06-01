@@ -1,8 +1,14 @@
 # Change Log
 
+## 0.0.29
+- Highlight return values as variables.
+- Highlight single letter variables & functions.
+- Highlight custom types in variable declarations.
+- Add meta match for `if let` statements.
+
 ## 0.0.28
-- Defined `*`  as *glob* operator.
-- Defined `?`  as *error-propagation* operator.
+- Defined `*` as *glob* operator.
+- Defined `?` as *error-propagation* operator.
 
 ## 0.0.27
 - Last tweak to variable highlighting for the time being.
