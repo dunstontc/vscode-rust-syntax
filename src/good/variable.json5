@@ -26,13 +26,14 @@
             "3": {"name": "keyword.operator.rust"},
           },
         },
-        // {
-        //   "match": "(?<=&)([a-zA-Z0-9_]+)",
-        //   "captures": {
-        //     // "1": {"name": "keyword.operator.sigil.rust"},
-        //     "1": {"name": "variable.other.ref.rust"},
-        //   },
-        // },
+        {
+          "match": "(?<=&)(self)?([a-zA-Z0-9_]+)?",
+          "captures": {
+            // "1": {"name": "keyword.operator.sigil.rust"},
+            "1": {"name": "variable.language.self.rust"},
+            "2": {"name": "variable.other.ref.rust"},
+          },
+        },
       ]
     }
   }

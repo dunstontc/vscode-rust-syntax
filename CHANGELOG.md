@@ -2,6 +2,7 @@
 
 ## 0.0.24
 - More improvement to struct highlighting.
+- Highlight references as variables.
 
 ## 0.0.23
 - (*hopefully*) Better highlighting for structs.

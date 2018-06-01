@@ -54,9 +54,10 @@
           "match": "HashMap"
         },
         {
-          "match": "(?<=-> )(T)",
+          "match": "(?<=->\\s)(&)?(\\w+)",
           "captures": {
-            "1": {"name": "entity.name.type.generic.rust"},
+            "1": {"name": "keyword.operator.sigil.rust"},
+            "2": {"name": "entity.name.type.rust"},
           },
         },
         {
@@ -66,22 +67,22 @@
           },
         },
         {
-          "comment": "Core trait (marker)",
+          // "comment": "Core trait (marker)",
           "name": "support.type.marker.rust",
           "match": "\\b(Copy|Send|Sized|Sync)\\b"
         },
         {
-          "comment": "Core trait",
+          // "comment": "Core trait",
           "name": "support.type.core.rust",
           "match": "\\b(Drop|Fn|FnMut|FnOnce|Clone|PartialEq|PartialOrd|Eq|Ord|AsRef|AsMut|Into|From|Default|Iterator|Extend|IntoIterator|DoubleEndedIterator|ExactSizeIterator)\\b"
         },
         {
-          "comment": "Standard library type",
+          // "comment": "Standard library type",
           "name": "storage.class.std.rust",
           "match": "\\b(Box|String|Vec|Path|PathBuf)\\b"
         },
         {
-          "comment": "Standard library trait",
+          // "comment": "Standard library trait",
           "name": "support.type.std.rust",
           "match": "\\b(ToOwned|ToString|FromStr)\\b"
         },

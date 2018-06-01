@@ -39,9 +39,11 @@
         },
         {
           "match": "(?<=\\=) ([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
-          "captures": {
-            "1": {"name": "entity.name.type.rust"},
-          }
+          "captures": {"1": {"name": "entity.name.type.rust"}}
+        },
+        {
+          "match": "^\\s+([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
+          "captures": {"1": {"name": "entity.name.type.rust"}}
         },
         // =================================================
         {
