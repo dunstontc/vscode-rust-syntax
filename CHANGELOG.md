@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.0.26
+## 0.0.27
 - Last tweak to variable highlighting for the time being.
 
 ## 0.0.26
