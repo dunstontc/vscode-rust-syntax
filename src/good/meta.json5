@@ -5,8 +5,16 @@
         {
           "name": "meta.attribute.rust",
           "begin": "#\\!?\\[",
-          "end": "\\]",
-        },
+            "end": "\\]",
+          },
+          {
+            "name": "meta.statement.if-let.rust",
+            "match": "(if) (let)",
+            "captures": {
+              "1": {"name": "keyword.control.rust"},
+              "2": {"name": "storage.type.rust"},
+            },
+          },
       ]
     }
   }
