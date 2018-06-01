@@ -1,6 +1,9 @@
 # Change Log
 
-## 0.0.25
+## 0.0.26
+- Last tweak to variable highlighting for the time being.
+
+## 0.0.26
 - Reference highlighting looks to be working.
 
 ## 0.0.25
