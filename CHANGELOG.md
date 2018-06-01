@@ -1,12 +1,17 @@
 # Change Log
 
+## 0.0.24
+- More improvement to struct highlighting.
+
+## 0.0.23
+- (*hopefully*) Better highlighting for structs.
+
 ## 0.0.22
 - Fixed pattern from 0.0.21.
 
 ## 0.0.21
-- Don't reauire spaces between variables & equals.
+- Don't require spaces between variables & equals.
 - Highlight types in method (`impl`) blocks.
-- (*hopefully*) Better highlighting for structs.
 
 ## 0.0.20
 - Highlight lifetimes.
