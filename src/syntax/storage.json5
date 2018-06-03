@@ -3,6 +3,10 @@
     "storage": {
       "patterns": [
         {
+          "name": "storage.modifier.external.rust",
+          "match": "\\b(extern)\\b"
+        },
+        {
           "name": "storage.modifier.mutable.rust",
           "match": "\\b(mut)\\b"
         },

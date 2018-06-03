@@ -24,7 +24,7 @@
         {
           "match": "^(extern) (crate) ([_A-Za-z0-9]+)",
           "captures": {
-            "1": {"name": "keyword.other.rust"},
+            "1": {"name": "storage.modifier.external.rust"},
             "2": {"name": "keyword.other.rust"},
             "3": {"name": "entity.name.type.rust"},
           },

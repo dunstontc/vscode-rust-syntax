@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.30
+- Highlight `extern` as a storage modifier keyword.
+
 ## 0.0.29
 - Highlight return values as variables.
 - Highlight single letter variables & functions.
