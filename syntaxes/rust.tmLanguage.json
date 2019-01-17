@@ -763,7 +763,7 @@
                     }
                 },
                 {
-                    "match": "(^\\s+|(Ok)\\()([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
+                    "match": "(^\\s+|(Ok)\\()(?!loop)([a-zA-Z][_a-zA-Z0-9:]+)\\s(?=\\{)",
                     "captures": {
                         "2": {
                             "name": "support.constant.core.rust"

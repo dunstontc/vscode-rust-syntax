@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.31
+- Fix highlighting for `loop` keyword.
+
 ## 0.0.30
 - Highlight `extern` as a storage modifier keyword.
 
