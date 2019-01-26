@@ -158,6 +158,14 @@
                 {
                     "name": "punctuation.other.paren.rust",
                     "match": "[)(]"
+                },
+				{
+                    "name": "punctuation.other.curly.rust",
+                    "match": "[}{]"
+                },
+				{
+                    "name": "punctuation.other.squar.rust",
+                    "match": "[\\[|\\]]"
                 }
             ]
         },
