@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.32
+- Additional fix for `loop`.
+
 ## 0.0.31
 - Fix highlighting for `loop` keyword.
 
